@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Fuzzer - 결과</title>
+  <style>
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #444;
+    }
+
+    th {
+      background: #333;
+    }
+
+    .btn-download {
+      display: block;
+      margin: 2rem auto;
+      padding: 0.75rem 1.5rem;
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background-color: #6366f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>✅ 퍼징 결과</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>취약점</th>
+        <th>설명</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>/login</td>
+        <td>SQL Injection</td>
+        <td>로그인 우회 가능</td>
+      </tr>
+      <tr>
+        <td>/search</td>
+        <td>XSS</td>
+        <td>스크립트 실행됨</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="/download/report.pdf">
+    <button class="btn-download">📄 PDF 리포트 다운로드</button>
+  </a>
+</body>
+</html>

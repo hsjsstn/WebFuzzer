@@ -392,4 +392,49 @@ def main():
     logger.info("[Main] 웹 퍼징이 완료되었습니다.")
 
 if __name__ == "__main__":
-    main()
+    import sys
+
+    if len(sys.argv) != 2:
+        print("사용법: python fuzzer.py <URL>")
+        sys.exit(1)
+
+    base_url = sys.argv[1]
+    logger.info(f"[*] 퍼저 시작: {base_url}")
+
+    # robots.txt 처리
+    robot_parser = urllib.robotparser.RobotFileParser()
+    robot_parser.set_url(urljoin(base_url, "/robots.txt"))
+    robot_parser.read()
+
+    # 정적 크롤링
+    crawler = StaticCrawler(base_url, robot_parser)
+    found_urls = crawler.crawl()
+
+    # 동적 크롤링 결과가 없으면 빈 리스트로라도 전달
+    extraction_results = []  # 또는 dynamic_urls, 혹은 None을 허용하도록 함수 수정해도 됨
+    vulnerabilities = []     # 퍼징 결과로 찾은 취약점
+    attempts = []            # 시도한 페이로드 등
+
+    generate_pdf_report(found_urls, extraction_results, vulnerabilities, attempts)
+
+    logger.info("[*] 퍼징 완료.")
+
+def run_fuzzer(url):
+    logger.info(f"[*] Flask에서 퍼저 시작: {url}")
+
+    robot_parser = urllib.robotparser.RobotFileParser()
+    robot_parser.set_url(urljoin(url, "/robots.txt"))
+    robot_parser.read()
+
+    crawler = StaticCrawler(url, robot_parser)
+    found_urls = crawler.crawl()
+
+    generate_pdf_report(
+    crawled_urls=found_urls,
+    extraction_results=[],     # 또는 dynamic_urls
+    vulnerabilities=[],        # 예: [{'url': 'http://test.com', 'type': 'SQL Injection'}]
+    attempts=[]                # 예: [{'url': 'http://test.com', 'payload': "' OR 1=1 --"}]
+)
+
+    logger.info("[*] Flask에서 퍼징 완료.")
+    return found_urls  # 필요 시 반환
