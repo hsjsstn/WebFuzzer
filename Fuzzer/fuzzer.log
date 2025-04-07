@@ -1963,3 +1963,173 @@
 2025-04-07 20:53:16,954 - INFO - [*] Flask에서 퍼징 완료.
 2025-04-07 20:53:16,955 - INFO - 127.0.0.1 - - [07/Apr/2025 20:53:16] "POST /loading HTTP/1.1" 200 -
 2025-04-07 20:53:19,271 - INFO - 127.0.0.1 - - [07/Apr/2025 20:53:19] "GET /result HTTP/1.1" 200 -
+2025-04-07 20:59:29,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-07 20:59:29,378 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-07 20:59:29,379 - INFO -  * Restarting with stat
+2025-04-07 20:59:29,619 - WARNING -  * Debugger is active!
+2025-04-07 20:59:29,624 - INFO -  * Debugger PIN: 104-001-820
+2025-04-07 20:59:30,506 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:30] "GET / HTTP/1.1" 200 -
+2025-04-07 20:59:30,556 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-07 20:59:32,981 - INFO - [*] Flask에서 퍼저 시작: ㅇ
+2025-04-07 20:59:33,006 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:33] "[35m[1mPOST /loading HTTP/1.1[0m" 500 -
+2025-04-07 20:59:33,018 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:33] "[36mGET /loading?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-07 20:59:33,019 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:33] "[36mGET /loading?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-07 20:59:33,036 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:33] "GET /loading?__debugger__=yes&cmd=resource&f=console.png&s=Q6nxaWHtldoFDokS8o6D HTTP/1.1" 200 -
+2025-04-07 20:59:33,174 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:33] "[36mGET /loading?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-04-07 20:59:37,811 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000/
+2025-04-07 20:59:37,824 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/
+2025-04-07 20:59:37,835 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-07 20:59:37,839 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-07 20:59:37,849 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-07 20:59:37,856 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-07 20:59:37,861 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-07 20:59:37,864 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-07 20:59:37,868 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-07 20:59:37,873 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-07 20:59:37,880 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-07 20:59:37,884 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-07 20:59:37,888 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-07 20:59:37,893 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-07 20:59:37,896 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-07 20:59:37,900 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-07 20:59:37,903 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-07 20:59:37,907 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-07 20:59:37,911 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-07 20:59:37,915 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-07 20:59:37,919 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-07 20:59:37,922 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-07 20:59:37,926 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-07 20:59:37,931 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-07 20:59:37,936 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-07 20:59:37,940 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-07 20:59:37,943 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-07 20:59:37,947 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-07 20:59:37,951 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-07 20:59:37,954 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-07 20:59:37,959 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-07 20:59:37,963 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-07 20:59:37,966 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-07 20:59:37,971 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-07 20:59:37,975 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-07 20:59:37,979 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-07 20:59:37,983 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-07 20:59:37,987 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-07 20:59:37,990 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-07 20:59:37,993 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-07 20:59:37,997 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-07 20:59:38,001 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-07 20:59:38,005 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-07 20:59:38,009 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-07 20:59:38,012 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-07 20:59:38,015 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-07 20:59:38,017 - INFO - [StaticCrawler] 크롤링 완료: 44개의 URL 수집.
+2025-04-07 20:59:38,041 - INFO - NanumGothic font registered successfully.
+2025-04-07 20:59:38,062 - INFO - NanumGothic 폰트 등록 성공
+2025-04-07 20:59:38,079 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-07 20:59:38,079 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-07 20:59:38,080 - INFO - 127.0.0.1 - - [07/Apr/2025 20:59:38] "POST /loading HTTP/1.1" 200 -
+2025-04-07 21:03:35,679 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000/
+2025-04-07 21:03:35,687 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/
+2025-04-07 21:03:35,694 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-07 21:03:35,697 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-07 21:03:35,704 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-07 21:03:35,710 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-07 21:03:35,713 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-07 21:03:35,716 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-07 21:03:35,720 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-07 21:03:35,723 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-07 21:03:35,725 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-07 21:03:35,728 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-07 21:03:35,731 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-07 21:03:35,733 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-07 21:03:35,736 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-07 21:03:35,739 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-07 21:03:35,742 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-07 21:03:35,744 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-07 21:03:35,747 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-07 21:03:35,749 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-07 21:03:35,752 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-07 21:03:35,754 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-07 21:03:35,757 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-07 21:03:35,762 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-07 21:03:35,765 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-07 21:03:35,768 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-07 21:03:35,771 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-07 21:03:35,773 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-07 21:03:35,776 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-07 21:03:35,779 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-07 21:03:35,782 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-07 21:03:35,785 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-07 21:03:35,787 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-07 21:03:35,791 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-07 21:03:35,794 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-07 21:03:35,796 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-07 21:03:35,799 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-07 21:03:35,801 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-07 21:03:35,803 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-07 21:03:35,806 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-07 21:03:35,809 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-07 21:03:35,812 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-07 21:03:35,816 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-07 21:03:35,818 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-07 21:03:35,821 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-07 21:03:35,824 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-07 21:03:35,826 - INFO - [StaticCrawler] 크롤링 완료: 44개의 URL 수집.
+2025-04-07 21:03:35,867 - INFO - NanumGothic font registered successfully.
+2025-04-07 21:03:35,889 - INFO - NanumGothic 폰트 등록 성공
+2025-04-07 21:03:35,900 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-07 21:03:35,900 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-07 21:03:35,901 - INFO - 127.0.0.1 - - [07/Apr/2025 21:03:35] "POST /loading HTTP/1.1" 200 -
+2025-04-07 21:09:43,886 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000/
+2025-04-07 21:09:43,894 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/
+2025-04-07 21:09:43,903 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-07 21:09:43,906 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-07 21:09:43,914 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-07 21:09:43,923 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-07 21:09:43,927 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-07 21:09:43,931 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-07 21:09:43,936 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-07 21:09:43,939 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-07 21:09:43,943 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-07 21:09:43,946 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-07 21:09:43,950 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-07 21:09:43,954 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-07 21:09:43,957 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-07 21:09:43,961 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-07 21:09:43,964 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-07 21:09:43,967 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-07 21:09:43,970 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-07 21:09:43,973 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-07 21:09:43,977 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-07 21:09:43,980 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-07 21:09:43,984 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-07 21:09:43,988 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-07 21:09:43,992 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-07 21:09:43,996 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-07 21:09:43,999 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-07 21:09:44,002 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-07 21:09:44,005 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-07 21:09:44,007 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-07 21:09:44,010 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-07 21:09:44,013 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-07 21:09:44,016 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-07 21:09:44,018 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-07 21:09:44,021 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-07 21:09:44,023 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-07 21:09:44,026 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-07 21:09:44,029 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-07 21:09:44,032 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-07 21:09:44,035 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-07 21:09:44,037 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-07 21:09:44,041 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-07 21:09:44,044 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-07 21:09:44,047 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-07 21:09:44,050 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-07 21:09:44,053 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-07 21:09:44,056 - INFO - [StaticCrawler] 크롤링 완료: 44개의 URL 수집.
+2025-04-07 21:09:44,080 - INFO - NanumGothic font registered successfully.
+2025-04-07 21:09:44,101 - INFO - NanumGothic 폰트 등록 성공
+2025-04-07 21:09:44,113 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-07 21:09:44,113 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-07 21:09:44,114 - INFO - 127.0.0.1 - - [07/Apr/2025 21:09:44] "POST /loading HTTP/1.1" 200 -

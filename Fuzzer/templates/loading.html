@@ -22,14 +22,14 @@
       border-radius: 8px;
       overflow: hidden;
       height: 20px;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
 
     .progress {
-      width: 50%;
+      width: 0%;
       background: #4f46e5;
       height: 100%;
-      animation: loading 3s infinite ease-in-out;
+      transition: width 0.4s ease-in-out;
     }
 
     @keyframes loading {
@@ -66,8 +66,11 @@
   <h1>⚙️ 퍼징 진행 중...</h1>
 
   <div class="progress-bar">
-    <div class="progress"></div>
+    <div class="progress" id="progress-bar"></div>
   </div>
+  <p id="progress-text" style="text-align:center;">0%</p>
+  
+  
 
   <h2>📄 로그</h2>
   <div class="log">
@@ -94,5 +97,23 @@
       </button>
     </form>
   </div>
+  <script>
+    let percent = 0;
+    
+    function updateProgress() {
+      if (percent < 100) {
+        percent += Math.floor(Math.random() * 5) + 1; // 1~5%씩 증가
+        percent = Math.min(percent, 100); // 최대 100%
+    
+        const bar = document.getElementById('progress-bar');
+        const text = document.getElementById('progress-text');
+    
+        bar.style.width = percent + "%";
+        text.textContent = percent + "%";
+      }
+    }
+    
+    setInterval(updateProgress, 500); // 0.5초마다 업데이트
+    </script>
 </body>
 </html>
