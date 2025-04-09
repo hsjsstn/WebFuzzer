@@ -74,22 +74,9 @@
 
   <h2>📄 로그</h2>
   <div class="log">
-    <pre>
-[INFO] 크롤링 시작
-[INFO] https://example.com 접속 성공
-[INFO] form 파라미터 탐색 중...
-[INFO] 퍼징 payload 전송...
-    </pre>
+    <pre id="log-area">로딩 중...</pre>
   </div>
 
-  <h2>🔗 탐색된 URL</h2>
-  <div class="urls">
-    <ul>
-      <li>https://example.com/login</li>
-      <li>https://example.com/admin</li>
-      <li>https://example.com/contact</li>
-    </ul>
-  </div>
   <div style="text-align: center; margin-top: 2rem;">
     <form action="{{ url_for('result') }}" method="get">
       <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; border: none; border-radius: 8px; background: #4f46e5; color: white; cursor: pointer;">
@@ -99,21 +86,31 @@
   </div>
   <script>
     let percent = 0;
+    const bar = document.getElementById('progress-bar');
+    const text = document.getElementById('progress-text');
+    const logArea = document.getElementById('log-area');
     
     function updateProgress() {
       if (percent < 100) {
-        percent += Math.floor(Math.random() * 5) + 1; // 1~5%씩 증가
-        percent = Math.min(percent, 100); // 최대 100%
-    
-        const bar = document.getElementById('progress-bar');
-        const text = document.getElementById('progress-text');
-    
+        percent += Math.floor(Math.random() * 5) + 1;
+        percent = Math.min(percent, 100);
         bar.style.width = percent + "%";
         text.textContent = percent + "%";
       }
     }
     
-    setInterval(updateProgress, 500); // 0.5초마다 업데이트
-    </script>
+    function updateLogs() {
+      fetch("/logs")
+        .then(res => res.json())
+        .then(data => {
+          logArea.textContent = data.logs.join('');
+          logArea.scrollTop = logArea.scrollHeight;
+        });
+    }
+    
+    setInterval(updateProgress, 500);
+    setInterval(updateLogs, 2000);
+    updateLogs();
+  </script>
 </body>
 </html>
