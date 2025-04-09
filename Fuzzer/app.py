@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify
 from fuzzer import run_fuzzer  
 from report import generate_pdf_report
-from threading import Thread
+import threading 
 import time
 import os
 
@@ -21,16 +21,44 @@ def start():
     generate_pdf_report(result_data)
     return redirect(url_for('loading'))
 
-@app.route('/loading', methods=['POST'])
+@app.route("/loading", methods=["POST"])
 def loading():
-    global start_log_line
-    # 로그 시작 라인 저장
-    with open("fuzzer.log", "r", encoding="utf-8") as f:
-        start_log_line = len(f.readlines())
+    global fuzzer_done, log_start_pos
+    target_url = request.form.get("target_url")
+    max_depth = int(request.form.get("max_depth", 1))  # 기본값 1
 
-    # 퍼저 실행 시작
-    url = request.form.get("target_url")
-    run_fuzzer(url)
+    if not target_url:
+        return "URL이 필요합니다.", 400
+    
+    try:
+        max_depth = int(request.form.get("max_depth", 1))
+    except ValueError:
+        return "크롤링 깊이는 숫자로 입력해주세요.", 400
+
+    # 로그 파일 위치 저장 (로딩 이후 생성된 로그만 보여주기 위해)
+    try:
+        with open("fuzzer.log", "rb") as f:
+            f.seek(0, 2)
+            log_start_pos = f.tell()
+    except FileNotFoundError:
+        log_start_pos = 0
+
+    fuzzer_done = False
+
+    def run_async():
+        urls, results, vulns, attempts = run_fuzzer(target_url, max_depth)
+        generate_pdf_report(
+            crawled_urls=urls,
+            extraction_results=results,
+            vulnerabilities=vulns,
+            attempts=attempts,
+            output_path="fuzzer_report.pdf"
+        )
+        global fuzzer_done
+        fuzzer_done = True
+
+    threading.Thread(target=run_async).start()
+
     return render_template("loading.html")
 
 def check_fuzzing_done():
@@ -40,6 +68,7 @@ def check_fuzzing_done():
             return "[*] Flask에서 퍼징 완료." in logs
     except FileNotFoundError:
         return False
+    
 @app.route('/logs')
 def get_logs():
     try:

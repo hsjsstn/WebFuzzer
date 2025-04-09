@@ -53,6 +53,7 @@
     <h1>Web Fuzzer</h1>
     <form action="{{ url_for('loading') }}" method="post">
         <input type="text" name="target_url" placeholder="크롤링할 URL 입력" required>
+        <input type="text" name="max_depth" placeholder="크롤링 깊이 입력" min="1" required>
         <button type="submit">크롤링 시작</button>
     </form>
 </body>

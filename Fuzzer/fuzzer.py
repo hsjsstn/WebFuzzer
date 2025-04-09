@@ -419,70 +419,61 @@ if __name__ == "__main__":
 
     logger.info("[*] 퍼징 완료.")
 
-def run_fuzzer(url):
-    logger.info(f"[*] Flask에서 퍼저 시작: {url}")
+def run_fuzzer(url, max_depth):
+    logger.info(f"[*] Flask에서 퍼저 시작: {url} (깊이: {max_depth})")
 
-    # robots.txt 처리
     robot_parser = urllib.robotparser.RobotFileParser()
     robot_parser.set_url(urljoin(url, "/robots.txt"))
     robot_parser.read()
 
-    # 정적 크롤링
-    crawler = StaticCrawler(url, robot_parser)
-    static_urls = crawler.crawl()
+    static_crawler = StaticCrawler(url, robot_parser)
+    static_urls = static_crawler.crawl()
 
-    # 동적 크롤링
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--no-sandbox")
-
-    try:
-        driver = webdriver.Chrome(options=chrome_options)
-    except Exception as e:
-        logger.error(f"[run_fuzzer] WebDriver 초기화 실패: {e}")
-        return static_urls
+    driver = webdriver.Chrome(options=chrome_options)
 
     visited_urls = set()
     extraction_results = []
 
     try:
-        crawl_dynamic(driver, url, max_depth=1, visited_urls=visited_urls, extraction_results=extraction_results, robot_parser=robot_parser)
+        crawl_dynamic(driver, url, max_depth, visited_urls, extraction_results, robot_parser)
     finally:
         driver.quit()
 
-    # 폼 수집
+    combined_urls = static_urls.union(visited_urls)
+
     forms = []
     for result in extraction_results:
         forms.extend(result['forms'])
-        for input_field in result['independent_inputs']:
-            if input_field['name']:
+        for field in result['independent_inputs']:
+            if field['name']:
                 forms.append({
                     'action': result['url'],
                     'method': 'get',
-                    'inputs': [input_field]
+                    'inputs': [field]
                 })
 
     forms = [form for form in forms if form['inputs']]
 
+    vulnerabilities = []
+    attempts = []
     if forms:
         payloads = sql_injection_payloads + xss_payloads + command_injection_payloads
-        fuzzer = AsyncFuzzer(forms, payloads, concurrency=10)
+        fuzzer = AsyncFuzzer(forms, payloads)
         asyncio.run(fuzzer.run())
         vulnerabilities = fuzzer.vulnerabilities
         attempts = fuzzer.attempts
-    else:
-        logger.info("[run_fuzzer] 퍼징할 폼이 없습니다.")
-        vulnerabilities = []
-        attempts = []
 
     # PDF 리포트 생성
-    generate_pdf_report(
-        crawled_urls=static_urls.union(visited_urls),
-        extraction_results=extraction_results,
-        vulnerabilities=vulnerabilities,
-        attempts=attempts
-    )
+    # generate_pdf_report(
+    #     crawled_urls=static_urls.union(visited_urls),
+    #     extraction_results=extraction_results,
+    #     vulnerabilities=vulnerabilities,
+    #     attempts=attempts
+    # )
 
     logger.info("[*] Flask에서 퍼징 완료.")
-    return static_urls.union(visited_urls)
+    return combined_urls, extraction_results, vulnerabilities, attempts
