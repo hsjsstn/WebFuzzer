@@ -2687,3 +2687,1028 @@
 2025-04-09 16:36:15,916 - INFO - 127.0.0.1 - - [09/Apr/2025 16:36:15] "GET /logs HTTP/1.1" 200 -
 2025-04-09 16:36:17,916 - INFO - 127.0.0.1 - - [09/Apr/2025 16:36:17] "GET /logs HTTP/1.1" 200 -
 2025-04-09 16:36:19,919 - INFO - 127.0.0.1 - - [09/Apr/2025 16:36:19] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:58:57,540 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 20:58:57,540 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 20:58:57,541 - INFO -  * Restarting with stat
+2025-04-09 20:58:57,819 - WARNING -  * Debugger is active!
+2025-04-09 20:58:57,825 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 20:58:57,886 - INFO - 127.0.0.1 - - [09/Apr/2025 20:58:57] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:58:59,884 - INFO - 127.0.0.1 - - [09/Apr/2025 20:58:59] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:01,887 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:01] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:03,886 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:03] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:05,886 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:05] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:07,886 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:07] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:09,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:09] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:11,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:11] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:13,886 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:13] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:15,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:15] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:17,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:17] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:19,884 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:19] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:21,886 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:21] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:23,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:23] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:25,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:25] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:27,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:27] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:29,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:29] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:31,209 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/fuzzer.py', reloading
+2025-04-09 20:59:31,269 - INFO -  * Restarting with stat
+2025-04-09 20:59:31,679 - WARNING -  * Debugger is active!
+2025-04-09 20:59:31,683 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 20:59:31,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:31] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:33,883 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:33] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:35,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:35] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:37,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:37] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:39,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:39] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:41,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:41] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:44,757 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 20:59:44,757 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 20:59:44,758 - INFO -  * Restarting with stat
+2025-04-09 20:59:44,985 - WARNING -  * Debugger is active!
+2025-04-09 20:59:44,991 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 20:59:45,890 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:45] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:47,887 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:47] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:49,884 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:49] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:51,887 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:51] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:53,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:53] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:55,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:55] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:57,888 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:57] "GET /logs HTTP/1.1" 200 -
+2025-04-09 20:59:59,885 - INFO - 127.0.0.1 - - [09/Apr/2025 20:59:59] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:01,887 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:01] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:02,825 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/fuzzer.py', reloading
+2025-04-09 21:00:02,876 - INFO -  * Restarting with stat
+2025-04-09 21:00:03,231 - WARNING -  * Debugger is active!
+2025-04-09 21:00:03,237 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:00:03,888 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:03] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:05,884 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:05] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:07,451 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/app.py', reloading
+2025-04-09 21:00:07,496 - INFO -  * Restarting with stat
+2025-04-09 21:00:07,731 - WARNING -  * Debugger is active!
+2025-04-09 21:00:07,735 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:00:07,885 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:07] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:09,885 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:09] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:11,884 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:11] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:13,887 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:13] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:15,884 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:15] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:17,887 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:17] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:19,884 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:19] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:21,886 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:21] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:23,886 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:23] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:43,677 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 21:00:43,677 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 21:00:43,678 - INFO -  * Restarting with stat
+2025-04-09 21:00:43,918 - WARNING -  * Debugger is active!
+2025-04-09 21:00:43,924 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:00:43,952 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:43] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:45,884 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:45] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:48,207 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:48] "GET / HTTP/1.1" 200 -
+2025-04-09 21:00:48,223 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 21:00:51,336 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000
+2025-04-09 21:00:51,337 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:51] "POST /loading HTTP/1.1" 200 -
+2025-04-09 21:00:51,355 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-09 21:00:51,363 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-09 21:00:51,371 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-09 21:00:51,377 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-09 21:00:51,382 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-09 21:00:51,385 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-09 21:00:51,388 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-09 21:00:51,391 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-09 21:00:51,394 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-09 21:00:51,397 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-09 21:00:51,400 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-09 21:00:51,403 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-09 21:00:51,406 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-09 21:00:51,410 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-09 21:00:51,413 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-09 21:00:51,416 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-09 21:00:51,418 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-09 21:00:51,421 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-09 21:00:51,424 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-09 21:00:51,426 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-09 21:00:51,429 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-09 21:00:51,433 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-09 21:00:51,436 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-09 21:00:51,441 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-09 21:00:51,444 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-09 21:00:51,447 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-09 21:00:51,449 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-09 21:00:51,452 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-09 21:00:51,454 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-09 21:00:51,456 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-09 21:00:51,459 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-09 21:00:51,461 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-09 21:00:51,464 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-09 21:00:51,466 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-09 21:00:51,469 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-09 21:00:51,471 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-09 21:00:51,473 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-09 21:00:51,476 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-09 21:00:51,478 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-09 21:00:51,482 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-09 21:00:51,485 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-09 21:00:51,487 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-09 21:00:51,490 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-09 21:00:51,493 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-09 21:00:51,495 - INFO - [StaticCrawler] 크롤링 완료: 43개의 URL 수집.
+2025-04-09 21:00:52,436 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 0
+2025-04-09 21:00:52,680 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:00:52,697 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/products, 깊이: 1
+2025-04-09 21:00:52,734 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/products
+2025-04-09 21:00:52,775 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 1
+2025-04-09 21:00:52,793 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:00:52,803 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/posts, 깊이: 1
+2025-04-09 21:00:52,832 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/posts
+2025-04-09 21:00:52,873 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/login, 깊이: 1
+2025-04-09 21:00:52,894 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/login
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/10, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/12, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/9, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/8, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/11, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products/add, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/4, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/2, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=2, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/7, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/13, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/15, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=1, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/1, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/3, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/14, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/6, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/5, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=1, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/14, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/9, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/13, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/10, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts/add, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/4, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/11, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=2, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/8, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/12, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/5, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/7, 스킵.
+2025-04-09 21:00:52,906 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/2, 스킵.
+2025-04-09 21:00:52,907 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/6, 스킵.
+2025-04-09 21:00:52,907 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/3, 스킵.
+2025-04-09 21:00:52,907 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/1, 스킵.
+2025-04-09 21:00:52,907 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/15, 스킵.
+2025-04-09 21:00:52,907 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:00:52,907 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/register, 스킵.
+2025-04-09 21:00:52,983 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:00:52,984 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:00:52,984 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:00:52,986 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:00:52,987 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:00:52,988 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:00:52,989 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:00:52,989 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:00:52,989 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:00:52,990 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:00:52,990 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:00:52,993 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:00:52,993 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:00:52,994 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:00:52,994 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:00:52,994 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:00:52,995 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:00:52,995 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:00:52,996 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:00:52,997 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:00:52,998 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:00:52,998 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:00:53,002 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:00:53,003 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:00:53,003 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:00:53,003 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:00:53,003 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:00:53,003 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:00:53,024 - INFO - NanumGothic font registered successfully.
+2025-04-09 21:00:53,043 - INFO - NanumGothic 폰트 등록 성공
+2025-04-09 21:00:53,071 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-09 21:00:53,071 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-09 21:00:53,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:53] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:55,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:55] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:57,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:57] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:00:59,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:00:59] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:01,350 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:01] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:03,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:03] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:05,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:05] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:07,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:07] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:09,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:09] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:11,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:11] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:13,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:13] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:15,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:15] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:17,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:17] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:19,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:19] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:21,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:21] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:23,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:23] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:25,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:25] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:27,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:27] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:29,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:29] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:31,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:31] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:33,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:33] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:35,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:35] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:37,351 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:37] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:39,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:39] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:41,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:41] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:43,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:43] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:45,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:45] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:47,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:47] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:49,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:49] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:51,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:51] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:53,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:53] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:55,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:55] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:57,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:57] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:01:59,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:01:59] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:01,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:01] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:03,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:03] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:05,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:05] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:07,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:07] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:09,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:09] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:11,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:11] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:13,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:13] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:15,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:15] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:17,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:17] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:19,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:19] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:21,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:21] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:23,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:23] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:25,355 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:25] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:27,354 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:27] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:29,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:29] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:31,352 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:31] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:33,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:33] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:35,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:35] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:37,353 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:37] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:02:37,614 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/app.py', reloading
+2025-04-09 21:02:37,717 - INFO -  * Restarting with stat
+2025-04-09 21:02:48,279 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 21:02:48,280 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 21:02:48,280 - INFO -  * Restarting with stat
+2025-04-09 21:02:48,527 - WARNING -  * Debugger is active!
+2025-04-09 21:02:48,533 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:02:51,431 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:51] "GET / HTTP/1.1" 200 -
+2025-04-09 21:02:51,460 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 21:02:53,985 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000
+2025-04-09 21:02:53,988 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:53] "POST /loading HTTP/1.1" 200 -
+2025-04-09 21:02:54,011 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-09 21:02:54,018 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-09 21:02:54,027 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-09 21:02:54,033 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-09 21:02:54,036 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-09 21:02:54,040 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-09 21:02:54,044 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-09 21:02:54,047 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-09 21:02:54,050 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-09 21:02:54,053 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-09 21:02:54,056 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-09 21:02:54,059 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-09 21:02:54,062 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-09 21:02:54,064 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-09 21:02:54,067 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-09 21:02:54,069 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-09 21:02:54,072 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-09 21:02:54,074 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-09 21:02:54,077 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-09 21:02:54,080 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-09 21:02:54,083 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-09 21:02:54,087 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-09 21:02:54,090 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-09 21:02:54,097 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-09 21:02:54,100 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-09 21:02:54,103 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-09 21:02:54,105 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-09 21:02:54,108 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-09 21:02:54,111 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-09 21:02:54,113 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-09 21:02:54,116 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-09 21:02:54,119 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-09 21:02:54,121 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-09 21:02:54,123 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-09 21:02:54,126 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-09 21:02:54,128 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-09 21:02:54,130 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-09 21:02:54,132 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-09 21:02:54,135 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-09 21:02:54,138 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-09 21:02:54,141 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-09 21:02:54,144 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-09 21:02:54,146 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-09 21:02:54,148 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-09 21:02:54,151 - INFO - [StaticCrawler] 크롤링 완료: 43개의 URL 수집.
+2025-04-09 21:02:55,119 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 0
+2025-04-09 21:02:55,233 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:02:55,247 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/login, 깊이: 1
+2025-04-09 21:02:55,273 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/login
+2025-04-09 21:02:55,285 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 1
+2025-04-09 21:02:55,303 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:02:55,313 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/posts, 깊이: 1
+2025-04-09 21:02:55,341 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/posts
+2025-04-09 21:02:55,379 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/products, 깊이: 1
+2025-04-09 21:02:55,402 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/products
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/register, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/9, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/5, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=1, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts/add, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/4, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/6, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/14, 스킵.
+2025-04-09 21:02:55,442 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=2, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/7, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/2, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/10, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/12, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/11, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/3, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/8, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/15, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/13, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/1, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/15, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=2, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/14, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/1, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/8, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/6, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/3, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/7, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/11, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/5, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/2, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products/add, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/10, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/9, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/13, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/4, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/12, 스킵.
+2025-04-09 21:02:55,443 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=1, 스킵.
+2025-04-09 21:02:55,523 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:02:55,523 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:02:55,524 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:02:55,524 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:02:55,525 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:02:55,527 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:02:55,528 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:02:55,528 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:02:55,529 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:02:55,529 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:02:55,530 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:02:55,530 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:02:55,530 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:02:55,530 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:02:55,531 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:02:55,532 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:02:55,532 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:02:55,535 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:02:55,536 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:02:55,536 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:02:55,536 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:02:55,536 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:02:55,537 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:02:55,537 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:02:55,538 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:02:55,538 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:02:55,538 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:02:55,538 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:02:55,558 - INFO - NanumGothic font registered successfully.
+2025-04-09 21:02:55,577 - INFO - NanumGothic 폰트 등록 성공
+2025-04-09 21:02:55,607 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-09 21:02:55,607 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-09 21:02:56,002 - INFO - 127.0.0.1 - - [09/Apr/2025 21:02:56] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:10:51,468 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000
+2025-04-09 21:10:51,470 - INFO - 127.0.0.1 - - [09/Apr/2025 21:10:51] "POST /loading HTTP/1.1" 200 -
+2025-04-09 21:10:51,483 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-09 21:10:51,491 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-09 21:10:51,501 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-09 21:10:51,513 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-09 21:10:51,524 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-09 21:10:51,530 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-09 21:10:51,534 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-09 21:10:51,539 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-09 21:10:51,544 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-09 21:10:51,550 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-09 21:10:51,558 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-09 21:10:51,563 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-09 21:10:51,566 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-09 21:10:51,569 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-09 21:10:51,573 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-09 21:10:51,577 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-09 21:10:51,580 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-09 21:10:51,584 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-09 21:10:51,587 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-09 21:10:51,590 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-09 21:10:51,594 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-09 21:10:51,599 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-09 21:10:51,603 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-09 21:10:51,608 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-09 21:10:51,612 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-09 21:10:51,615 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-09 21:10:51,618 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-09 21:10:51,622 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-09 21:10:51,625 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-09 21:10:51,628 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-09 21:10:51,631 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-09 21:10:51,634 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-09 21:10:51,638 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-09 21:10:51,641 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-09 21:10:51,644 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-09 21:10:51,646 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-09 21:10:51,649 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-09 21:10:51,651 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-09 21:10:51,655 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-09 21:10:51,659 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-09 21:10:51,663 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-09 21:10:51,666 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-09 21:10:51,669 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-09 21:10:51,672 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-09 21:10:51,675 - INFO - [StaticCrawler] 크롤링 완료: 43개의 URL 수집.
+2025-04-09 21:10:52,676 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 0
+2025-04-09 21:10:53,494 - INFO - 127.0.0.1 - - [09/Apr/2025 21:10:53] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:10:53,827 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:10:53,841 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/login, 깊이: 1
+2025-04-09 21:10:53,878 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/login
+2025-04-09 21:10:53,891 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 1
+2025-04-09 21:10:53,920 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:10:53,931 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/posts, 깊이: 1
+2025-04-09 21:10:53,963 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/posts
+2025-04-09 21:10:54,003 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/products, 깊이: 1
+2025-04-09 21:10:54,030 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/products
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/register, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/9, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/5, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=1, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts/add, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/4, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/6, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/14, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=2, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/7, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/2, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/10, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/12, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/11, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/3, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/8, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/15, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/13, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/1, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/15, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=2, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/14, 스킵.
+2025-04-09 21:10:54,066 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/1, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/8, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/6, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/3, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/7, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/11, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/5, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/2, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products/add, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/10, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/9, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/13, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/4, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/12, 스킵.
+2025-04-09 21:10:54,067 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=1, 스킵.
+2025-04-09 21:10:54,145 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:10:54,147 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:10:54,148 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:10:54,148 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:10:54,148 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:10:54,150 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:10:54,153 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:10:54,154 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:10:54,155 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:10:54,155 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:10:54,156 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:10:54,156 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:10:54,157 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:10:54,158 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:10:54,158 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:10:54,158 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:10:54,158 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:10:54,163 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:10:54,163 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:10:54,163 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:10:54,163 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:10:54,164 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:10:54,165 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:10:54,165 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:10:54,165 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:10:54,166 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:10:54,166 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:10:54,166 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:10:54,201 - INFO - NanumGothic font registered successfully.
+2025-04-09 21:10:54,220 - INFO - NanumGothic 폰트 등록 성공
+2025-04-09 21:10:54,249 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-09 21:10:54,250 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-09 21:11:11,575 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/app.py', reloading
+2025-04-09 21:11:11,638 - INFO -  * Restarting with stat
+2025-04-09 21:11:11,993 - WARNING -  * Debugger is active!
+2025-04-09 21:11:12,000 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:11:16,257 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/app.py', reloading
+2025-04-09 21:11:16,324 - INFO -  * Restarting with stat
+2025-04-09 21:11:16,594 - WARNING -  * Debugger is active!
+2025-04-09 21:11:16,598 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:14:24,569 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 21:14:24,569 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 21:14:24,569 - INFO -  * Restarting with stat
+2025-04-09 21:14:24,797 - WARNING -  * Debugger is active!
+2025-04-09 21:14:24,802 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:14:27,485 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:27] "GET / HTTP/1.1" 200 -
+2025-04-09 21:14:27,512 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 21:14:29,529 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000
+2025-04-09 21:14:29,548 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-09 21:14:29,552 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-09 21:14:29,560 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-09 21:14:29,565 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-09 21:14:29,568 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-09 21:14:29,571 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-09 21:14:29,575 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-09 21:14:29,577 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-09 21:14:29,580 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-09 21:14:29,583 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-09 21:14:29,586 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-09 21:14:29,589 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-09 21:14:29,591 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-09 21:14:29,594 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-09 21:14:29,597 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-09 21:14:29,599 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-09 21:14:29,602 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-09 21:14:29,604 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-09 21:14:29,607 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-09 21:14:29,609 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-09 21:14:29,612 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-09 21:14:29,615 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-09 21:14:29,618 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-09 21:14:29,621 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-09 21:14:29,624 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-09 21:14:29,626 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-09 21:14:29,628 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-09 21:14:29,631 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-09 21:14:29,634 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-09 21:14:29,637 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-09 21:14:29,639 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-09 21:14:29,642 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-09 21:14:29,644 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-09 21:14:29,646 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-09 21:14:29,649 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-09 21:14:29,652 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-09 21:14:29,654 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-09 21:14:29,657 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-09 21:14:29,660 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-09 21:14:29,664 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-09 21:14:29,667 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-09 21:14:29,670 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-09 21:14:29,673 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-09 21:14:29,676 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-09 21:14:29,678 - INFO - [StaticCrawler] 크롤링 완료: 43개의 URL 수집.
+2025-04-09 21:14:38,874 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 0
+2025-04-09 21:14:38,980 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:14:38,992 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 1
+2025-04-09 21:14:39,010 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:14:39,020 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/products, 깊이: 1
+2025-04-09 21:14:39,044 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/products
+2025-04-09 21:14:39,081 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/login, 깊이: 1
+2025-04-09 21:14:39,099 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/login
+2025-04-09 21:14:39,109 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/posts, 깊이: 1
+2025-04-09 21:14:39,129 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/posts
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/15, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/8, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/3, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/14, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/6, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products/add, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/1, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=2, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/9, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/7, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/5, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/10, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/11, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/4, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/13, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/2, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/12, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=1, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/register, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/5, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=1, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/11, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/10, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts/add, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/12, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/6, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/2, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/1, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/15, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=2, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/14, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/3, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/8, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/4, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/7, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/13, 스킵.
+2025-04-09 21:14:39,165 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/9, 스킵.
+2025-04-09 21:14:39,235 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:14:39,235 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:14:39,236 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:14:39,238 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:14:39,240 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:14:39,240 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:14:39,242 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:14:39,242 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:14:39,243 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:14:39,243 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:14:39,243 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:14:39,250 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:14:39,251 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:14:39,251 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:14:39,252 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:14:39,253 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:14:39,254 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:14:39,256 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:14:39,257 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:14:39,257 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:14:39,258 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:14:39,258 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:14:39,259 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:14:39,259 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:14:39,259 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:14:39,259 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:14:39,260 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:14:39,260 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:14:39,262 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:39] "POST /loading HTTP/1.1" 200 -
+2025-04-09 21:14:40,795 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:40] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:42,281 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:42] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:43,783 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:43] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:45,284 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:45] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:46,781 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:46] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:48,284 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:48] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:49,783 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:49] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:51,282 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:51] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:52,782 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:52] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:54,287 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:54] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:55,788 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:55] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:57,285 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:57] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:14:58,786 - INFO - 127.0.0.1 - - [09/Apr/2025 21:14:58] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:00,284 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:00] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:01,789 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:01] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:03,286 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:03] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:04,788 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:04] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:06,286 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:06] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:07,788 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:07] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:09,288 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:09] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:10,782 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:10] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:12,285 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:12] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:13,785 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:13] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:15,288 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:15] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:16,786 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:16] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:18,287 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:18] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:19,788 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:19] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:21,281 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:21] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:22,783 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:22] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:24,285 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:24] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:25,788 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:25] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:27,285 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:27] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:28,782 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:28] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:30,284 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:30] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:31,781 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:31] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:33,283 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:33] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:34,784 - INFO - 127.0.0.1 - - [09/Apr/2025 21:15:34] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:15:35,837 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/fuzzer.py', reloading
+2025-04-09 21:15:35,922 - INFO -  * Restarting with stat
+2025-04-09 21:16:14,817 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 21:16:14,817 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 21:16:14,818 - INFO -  * Restarting with stat
+2025-04-09 21:16:15,057 - WARNING -  * Debugger is active!
+2025-04-09 21:16:15,063 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:16:15,285 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:15] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:16:16,790 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:16] "[35m[1mGET /logs HTTP/1.1[0m" 500 -
+2025-04-09 21:16:26,626 - INFO -  * Detected change in '/Users/soojin/Desktop/WebFuzzer/Fuzzer/app.py', reloading
+2025-04-09 21:16:26,712 - INFO -  * Restarting with stat
+2025-04-09 21:16:27,076 - WARNING -  * Debugger is active!
+2025-04-09 21:16:27,080 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:16:29,239 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 21:16:29,239 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 21:16:29,239 - INFO -  * Restarting with stat
+2025-04-09 21:16:29,484 - WARNING -  * Debugger is active!
+2025-04-09 21:16:29,493 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:16:31,440 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:31] "GET / HTTP/1.1" 200 -
+2025-04-09 21:16:31,464 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 21:16:33,610 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000
+2025-04-09 21:16:33,633 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-09 21:16:33,639 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-09 21:16:33,647 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-09 21:16:33,653 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-09 21:16:33,659 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-09 21:16:33,662 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-09 21:16:33,675 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-09 21:16:33,678 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-09 21:16:33,682 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-09 21:16:33,686 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-09 21:16:33,690 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-09 21:16:33,693 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-09 21:16:33,697 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-09 21:16:33,700 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-09 21:16:33,712 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-09 21:16:33,731 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-09 21:16:33,741 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-09 21:16:33,745 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-09 21:16:33,755 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-09 21:16:33,759 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-09 21:16:33,762 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-09 21:16:33,767 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-09 21:16:33,771 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-09 21:16:33,775 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-09 21:16:33,779 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-09 21:16:33,782 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-09 21:16:33,786 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-09 21:16:33,789 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-09 21:16:33,792 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-09 21:16:33,794 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-09 21:16:33,799 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-09 21:16:33,802 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-09 21:16:33,806 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-09 21:16:33,808 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-09 21:16:33,811 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-09 21:16:33,814 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-09 21:16:33,817 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-09 21:16:33,820 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-09 21:16:33,822 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-09 21:16:33,826 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-09 21:16:33,829 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-09 21:16:33,832 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-09 21:16:33,834 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-09 21:16:33,839 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-09 21:16:33,841 - INFO - [StaticCrawler] 크롤링 완료: 43개의 URL 수집.
+2025-04-09 21:16:34,747 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 0
+2025-04-09 21:16:35,934 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:16:35,948 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/login, 깊이: 1
+2025-04-09 21:16:35,981 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/login
+2025-04-09 21:16:35,993 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 1
+2025-04-09 21:16:36,022 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:16:36,033 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/products, 깊이: 1
+2025-04-09 21:16:36,062 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/products
+2025-04-09 21:16:36,099 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/posts, 깊이: 1
+2025-04-09 21:16:36,123 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/posts
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/register, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/8, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=1, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/11, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/7, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/4, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/6, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/10, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/13, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/1, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/2, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/3, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/5, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products/add, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/15, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/9, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=2, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/14, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/12, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/9, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/8, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/12, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=1, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/2, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=2, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/10, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/11, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/3, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/5, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/7, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/4, 스킵.
+2025-04-09 21:16:36,159 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/1, 스킵.
+2025-04-09 21:16:36,160 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/13, 스킵.
+2025-04-09 21:16:36,160 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/15, 스킵.
+2025-04-09 21:16:36,160 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/14, 스킵.
+2025-04-09 21:16:36,160 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts/add, 스킵.
+2025-04-09 21:16:36,160 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/6, 스킵.
+2025-04-09 21:16:36,250 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:16:36,250 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:16:36,250 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:16:36,252 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:16:36,254 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:16:36,254 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:16:36,255 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:16:36,255 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:16:36,256 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:16:36,256 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:16:36,257 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:16:36,257 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:16:36,258 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:16:36,258 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:16:36,259 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:16:36,259 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:16:36,259 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:16:36,263 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:16:36,266 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:16:36,267 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:16:36,267 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:16:36,291 - INFO - NanumGothic font registered successfully.
+2025-04-09 21:16:36,313 - INFO - NanumGothic 폰트 등록 성공
+2025-04-09 21:16:36,350 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-09 21:16:36,350 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-09 21:16:36,356 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:36] "POST /loading HTTP/1.1" 200 -
+2025-04-09 21:16:37,870 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:37] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:39,370 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:39] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:40,871 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:40] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:42,369 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:42] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:43,871 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:43] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:45,372 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:45] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:46,872 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:46] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:48,370 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:48] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:49,872 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:49] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:51,373 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:51] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:52,871 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:52] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:54,371 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:54] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:55,875 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:55] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:57,371 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:57] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:16:58,868 - INFO - 127.0.0.1 - - [09/Apr/2025 21:16:58] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:17:00,372 - INFO - 127.0.0.1 - - [09/Apr/2025 21:17:00] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:17:01,873 - INFO - 127.0.0.1 - - [09/Apr/2025 21:17:01] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:17:03,370 - INFO - 127.0.0.1 - - [09/Apr/2025 21:17:03] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:17:04,870 - INFO - 127.0.0.1 - - [09/Apr/2025 21:17:04] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:17:06,371 - INFO - 127.0.0.1 - - [09/Apr/2025 21:17:06] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:17:07,871 - INFO - 127.0.0.1 - - [09/Apr/2025 21:17:07] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:22:51,448 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-04-09 21:22:51,448 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 21:22:51,448 - INFO -  * Restarting with stat
+2025-04-09 21:22:51,684 - WARNING -  * Debugger is active!
+2025-04-09 21:22:51,690 - INFO -  * Debugger PIN: 104-001-820
+2025-04-09 21:26:15,495 - INFO - [*] Flask에서 퍼저 시작: http://localhost:3000
+2025-04-09 21:26:15,520 - INFO - [StaticCrawler] 방문 중: http://localhost:3000
+2025-04-09 21:26:15,527 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products
+2025-04-09 21:26:15,539 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts
+2025-04-09 21:26:15,545 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/login
+2025-04-09 21:26:15,549 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products/add
+2025-04-09 21:26:15,553 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/1
+2025-04-09 21:26:15,556 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/2
+2025-04-09 21:26:15,559 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/3
+2025-04-09 21:26:15,563 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/4
+2025-04-09 21:26:15,565 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/5
+2025-04-09 21:26:15,569 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/6
+2025-04-09 21:26:15,572 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/7
+2025-04-09 21:26:15,576 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/8
+2025-04-09 21:26:15,579 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/9
+2025-04-09 21:26:15,582 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/10
+2025-04-09 21:26:15,585 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/11
+2025-04-09 21:26:15,588 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/12
+2025-04-09 21:26:15,591 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/13
+2025-04-09 21:26:15,594 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/14
+2025-04-09 21:26:15,597 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/15
+2025-04-09 21:26:15,601 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=1
+2025-04-09 21:26:15,605 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/products?page=2
+2025-04-09 21:26:15,609 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts/add
+2025-04-09 21:26:15,611 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/1
+2025-04-09 21:26:15,614 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/2
+2025-04-09 21:26:15,617 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/3
+2025-04-09 21:26:15,620 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/4
+2025-04-09 21:26:15,623 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/5
+2025-04-09 21:26:15,625 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/6
+2025-04-09 21:26:15,627 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/7
+2025-04-09 21:26:15,630 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/8
+2025-04-09 21:26:15,632 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/9
+2025-04-09 21:26:15,634 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/10
+2025-04-09 21:26:15,637 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/11
+2025-04-09 21:26:15,640 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/12
+2025-04-09 21:26:15,643 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/13
+2025-04-09 21:26:15,645 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/14
+2025-04-09 21:26:15,648 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/15
+2025-04-09 21:26:15,651 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=1
+2025-04-09 21:26:15,655 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/posts?page=2
+2025-04-09 21:26:15,658 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/register
+2025-04-09 21:26:15,661 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/productDetail/16
+2025-04-09 21:26:15,664 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/16
+2025-04-09 21:26:15,666 - INFO - [StaticCrawler] 방문 중: http://localhost:3000/postDetail/17
+2025-04-09 21:26:15,669 - INFO - [StaticCrawler] 크롤링 완료: 43개의 URL 수집.
+2025-04-09 21:26:16,658 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 0
+2025-04-09 21:26:16,778 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:26:16,791 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000, 깊이: 1
+2025-04-09 21:26:16,813 - INFO - [DynamicCrawler] 발견된 폼: 0개, 독립 입력 필드: 0개 - URL: http://localhost:3000/
+2025-04-09 21:26:16,823 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/products, 깊이: 1
+2025-04-09 21:26:16,858 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/products
+2025-04-09 21:26:16,902 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/posts, 깊이: 1
+2025-04-09 21:26:16,926 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/posts
+2025-04-09 21:26:16,969 - INFO - [DynamicCrawler] 방문 중: http://localhost:3000/login, 깊이: 1
+2025-04-09 21:26:16,989 - INFO - [DynamicCrawler] 발견된 폼: 1개, 독립 입력 필드: 0개 - URL: http://localhost:3000/login
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/5, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/14, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/13, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/11, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=2, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/8, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products/add, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/9, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/6, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/7, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/10, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/products?page=1, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/1, 스킵.
+2025-04-09 21:26:17,000 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/4, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/3, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/2, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/12, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/productDetail/15, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/3, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/13, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/7, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/1, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/10, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/4, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/5, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/6, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=1, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/11, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/2, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/12, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/8, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts?page=2, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/15, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/posts/add, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/14, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/postDetail/9, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000/register, 스킵.
+2025-04-09 21:26:17,001 - INFO - [DynamicCrawler] 최대 깊이(1) 도달 - URL: http://localhost:3000, 스킵.
+2025-04-09 21:26:17,074 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:26:17,074 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:26:17,075 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:26:17,076 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:26:17,078 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:26:17,078 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:26:17,078 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:26:17,078 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:26:17,078 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:26:17,079 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:26:17,079 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:26:17,083 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: ''"><script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:26:17,084 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<script>alert('XSS')</script>', 유형: XSS
+2025-04-09 21:26:17,084 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<img src=x onerror=alert('XSS')>', 유형: XSS
+2025-04-09 21:26:17,084 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<svg/onload=alert('XSS')>', 유형: XSS
+2025-04-09 21:26:17,085 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '<iframe src='javascript:alert("XSS")'></iframe>', 유형: XSS
+2025-04-09 21:26:17,086 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:26:17,086 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:26:17,087 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:26:17,088 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:26:17,088 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:26:17,088 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/products/search, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:26:17,093 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'netstat -an', 유형: Command Injection
+2025-04-09 21:26:17,093 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: 'ps aux', 유형: Command Injection
+2025-04-09 21:26:17,093 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '; ls', 유형: Command Injection
+2025-04-09 21:26:17,093 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /var/log/auth.log', 유형: Command Injection
+2025-04-09 21:26:17,093 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '| whoami', 유형: Command Injection
+2025-04-09 21:26:17,093 - INFO - [AsyncFuzzer] 취약점 발견 - 폼: http://localhost:3000/login, 페이로드: '&& cat /etc/passwd', 유형: Command Injection
+2025-04-09 21:26:17,114 - INFO - NanumGothic font registered successfully.
+2025-04-09 21:26:17,132 - INFO - NanumGothic 폰트 등록 성공
+2025-04-09 21:26:17,161 - INFO - [PDFReport] 리포트가 fuzzer_report.pdf에 생성되었습니다.
+2025-04-09 21:26:17,161 - INFO - [*] Flask에서 퍼징 완료.
+2025-04-09 21:26:17,163 - INFO - 127.0.0.1 - - [09/Apr/2025 21:26:17] "POST /loading HTTP/1.1" 200 -
+2025-04-09 21:26:18,685 - INFO - 127.0.0.1 - - [09/Apr/2025 21:26:18] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:26:20,182 - INFO - 127.0.0.1 - - [09/Apr/2025 21:26:20] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:26:21,679 - INFO - 127.0.0.1 - - [09/Apr/2025 21:26:21] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:26:23,181 - INFO - 127.0.0.1 - - [09/Apr/2025 21:26:23] "GET /logs HTTP/1.1" 200 -
+2025-04-09 21:26:23,338 - INFO - 127.0.0.1 - - [09/Apr/2025 21:26:23] "GET /result HTTP/1.1" 200 -

@@ -1,11 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify
 from fuzzer import run_fuzzer  
 from report import generate_pdf_report
-import threading
+from threading import Thread
+import time
 import os
 
+
 app = Flask(__name__)
-LOG_FILE_PATH = "fuzzer.log"
+start_log_line = 0  # 이 시점부터 로그 표시
 
 @app.route('/')
 def home():
@@ -19,18 +21,38 @@ def start():
     generate_pdf_report(result_data)
     return redirect(url_for('loading'))
 
-
-@app.route("/loading", methods=["POST"])
+@app.route('/loading', methods=['POST'])
 def loading():
-    target_url = request.form["target_url"]
+    global start_log_line
+    # 로그 시작 라인 저장
+    with open("fuzzer.log", "r", encoding="utf-8") as f:
+        start_log_line = len(f.readlines())
 
-    # 퍼저 실행을 별도 쓰레드에서
-    def run_background():
-        run_fuzzer(target_url)  # 네 퍼저 함수
-
-    threading.Thread(target=run_background).start()
-
+    # 퍼저 실행 시작
+    url = request.form.get("target_url")
+    run_fuzzer(url)
     return render_template("loading.html")
+
+def check_fuzzing_done():
+    try:
+        with open("fuzzer.log", "r", encoding="utf-8") as f:
+            logs = f.read()
+            return "[*] Flask에서 퍼징 완료." in logs
+    except FileNotFoundError:
+        return False
+@app.route('/logs')
+def get_logs():
+    try:
+        with open("fuzzer.log", "r", encoding="utf-8") as log_file:
+            all_logs = log_file.readlines()
+            logs = ''.join(all_logs[start_log_line:])
+    except FileNotFoundError:
+        logs = "로깅 파일이 아직 생성되지 않았습니다."
+
+    return jsonify({
+        "logs": logs,
+        "done": check_fuzzing_done()
+    })
 
 @app.route('/result')
 def result():
@@ -40,15 +62,5 @@ def result():
 def download():
     return send_file("results/result.pdf", as_attachment=True)
 
-
-@app.route("/logs")
-def get_logs():
-    try:
-        with open(LOG_FILE_PATH, "r") as f:
-            lines = f.readlines()
-        return jsonify(logs=lines[-30:])  # 최근 30줄만
-    except Exception as e:
-        return jsonify(logs=[f"[ERROR] 로그 불러오기 실패: {e}"])
-
 if __name__ == "__main__":
-    app.run(debug=True, host="127.0.0.1", port=5001)
+    app.run(debug=True, port=5001)

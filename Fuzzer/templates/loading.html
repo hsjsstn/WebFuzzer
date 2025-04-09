@@ -86,31 +86,29 @@
   </div>
   <script>
     let percent = 0;
-    const bar = document.getElementById('progress-bar');
-    const text = document.getElementById('progress-text');
-    const logArea = document.getElementById('log-area');
     
     function updateProgress() {
-      if (percent < 100) {
-        percent += Math.floor(Math.random() * 5) + 1;
-        percent = Math.min(percent, 100);
-        bar.style.width = percent + "%";
-        text.textContent = percent + "%";
-      }
-    }
-    
-    function updateLogs() {
       fetch("/logs")
-        .then(res => res.json())
+        .then(response => response.json())
         .then(data => {
-          logArea.textContent = data.logs.join('');
-          logArea.scrollTop = logArea.scrollHeight;
+          const logArea = document.querySelector(".log pre");
+          logArea.textContent = data.logs;
+          logArea.scrollTop = logArea.scrollHeight;  // 항상 최신 위치로 스크롤
+    
+          // 진행도 계산은 임시로 랜덤하게
+          if (percent < 100) {
+            percent += Math.floor(Math.random() * 5) + 1;
+            percent = Math.min(percent, 100);
+            document.getElementById("progress-bar").style.width = percent + "%";
+            document.getElementById("progress-text").textContent = percent + "%";
+          }
+    
+          // 완료되면 버튼을 눌러야 다음 페이지로 갈 수 있도록 유지
+          // 자동 이동은 하지 않음
         });
     }
     
-    setInterval(updateProgress, 500);
-    setInterval(updateLogs, 2000);
-    updateLogs();
-  </script>
+    setInterval(updateProgress, 1500);  // 1.5초마다 체크
+    </script>
 </body>
 </html>
