@@ -7,6 +7,12 @@ import os
 app = Flask(__name__)
 
 fuzzer_done = False
+fuzzer_data = {
+    "urls": [],
+    "results": [],
+    "vulnerabilities": [],
+    "attempts": []
+}
 log_start_pos = 0  # 크롤링 시작 시점의 로그 파일 위치
 
 
@@ -40,6 +46,11 @@ def loading():
 
     def run_async():
         urls, results, vulns, attempts = run_fuzzer(target_url, max_depth)
+        global fuzzer_data
+        fuzzer_data["urls"] = urls
+        fuzzer_data["results"] = results
+        fuzzer_data["vulnerabilities"] = vulns
+        fuzzer_data["attempts"] = attempts
         generate_pdf_report(
             crawled_urls=urls,
             extraction_results=results,
@@ -74,7 +85,11 @@ def get_logs():
 
 @app.route("/result")
 def result():
-    return render_template("result.html")
+    return render_template(
+        "result.html",
+        vulnerabilities=fuzzer_data["vulnerabilities"],
+        attempts=fuzzer_data["attempts"]
+    )
 
 @app.route('/download')
 def download():

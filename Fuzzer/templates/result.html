@@ -53,31 +53,33 @@
 </head>
 <body>
   <h1>✅ 퍼징 결과</h1>
-
-  <table>
-    <thead>
-      <tr>
-        <th>URL</th>
-        <th>취약점</th>
-        <th>설명</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>/login</td>
-        <td>SQL Injection</td>
-        <td>로그인 우회 가능</td>
-      </tr>
-      <tr>
-        <td>/search</td>
-        <td>XSS</td>
-        <td>스크립트 실행됨</td>
-      </tr>
-    </tbody>
-  </table>
-
   <a href="{{ url_for('download') }}">
     <button class="btn-download">📄 PDF 리포트 다운로드</button>
   </a>
+  <h2>🛡️ 발견된 취약점</h2>
+  {% if vulnerabilities %}
+  <table>
+    <thead>
+      <tr>
+        <th>대상 URL</th>
+        <th>취약점 유형</th>
+        <th>페이로드</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for v in vulnerabilities %}
+        <tr>
+          <td>{{ v.form }}</td>
+          <td>{{ v.type }}</td>
+          <td>{{ v.payload }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p style="text-align:center; color:#aaa;">🔍 발견된 취약점이 없습니다.</p>
+  {% endif %}
+
+  
 </body>
 </html>
