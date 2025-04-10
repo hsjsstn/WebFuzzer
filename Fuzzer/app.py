@@ -3,6 +3,19 @@ from fuzzer import run_fuzzer
 from report import generate_pdf_report
 import threading
 import os
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.FileHandler("fuzzer.log"),
+        logging.StreamHandler()
+    ]
+)
+
+logger = logging.getLogger(__name__)
+
 
 app = Flask(__name__)
 
@@ -14,7 +27,7 @@ fuzzer_data = {
     "attempts": []
 }
 log_start_pos = 0  # 크롤링 시작 시점의 로그 파일 위치
-
+os.makedirs("results", exist_ok=True)  # 폴더 없으면 자동 생성
 
 @app.route('/')
 def home():
@@ -44,6 +57,10 @@ def loading():
 
     fuzzer_done = False
 
+    # 기존 fuzzer_logs.txt 파일 초기화
+    open("results/fuzzer_logs.txt", "w").close()
+
+
     def run_async():
         urls, results, vulns, attempts = run_fuzzer(target_url, max_depth)
         global fuzzer_data
@@ -51,13 +68,27 @@ def loading():
         fuzzer_data["results"] = results
         fuzzer_data["vulnerabilities"] = vulns
         fuzzer_data["attempts"] = attempts
+
         generate_pdf_report(
             crawled_urls=urls,
             extraction_results=results,
             vulnerabilities=vulns,
             attempts=attempts,
-            output_path="fuzzer_report.pdf"
+            output_path="results/fuzzer_report.pdf"
         )
+
+        # 현재 로그 시작 시점 이후 로그만 백업
+        try:
+            os.makedirs("results", exist_ok=True)
+            with open("fuzzer.log", "rb") as src:
+                src.seek(log_start_pos)
+                recent_logs = src.read().decode("utf-8", errors="ignore")
+            with open("results/fuzzer_logs.txt", "w", encoding="utf-8") as dst:
+                dst.write(recent_logs)
+            logger.info("[*] 로그 백업 완료: fuzzer_logs.txt")
+        except Exception as e:
+            logger.error(f"[!] 로그 파일 복사 중 오류: {e}")
+
         global fuzzer_done
         fuzzer_done = True
 
@@ -91,9 +122,20 @@ def result():
         attempts=fuzzer_data["attempts"]
     )
 
-@app.route('/download')
-def download():
-    return send_file("fuzzer_report.pdf", as_attachment=True)
+# pdf 다운로드
+@app.route('/download-pdf')
+def download_pdf():
+    return send_file("results/fuzzer_report.pdf", as_attachment=True)
+
+# 로그 다운로드
+@app.route('/download-logs')
+def download_logs():
+    try:
+        with open("results/fuzzer_logs.txt", "r", encoding="utf-8") as out:
+            return send_file("results/fuzzer_logs.txt", as_attachment=True)
+
+    except Exception as e:
+        return f"로그 파일 다운로드 중 오류 발생: {e}", 500
 
 
 if __name__ == "__main__":

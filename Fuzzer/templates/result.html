@@ -34,9 +34,15 @@
       background: #333;
     }
 
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
     .btn-download {
       display: block;
-      margin: 2rem auto;
       padding: 0.75rem 1.5rem;
       background-color: #4f46e5;
       color: white;
@@ -53,9 +59,14 @@
 </head>
 <body>
   <h1>✅ 퍼징 결과</h1>
-  <a href="{{ url_for('download') }}">
-    <button class="btn-download">📄 PDF 리포트 다운로드</button>
-  </a>
+  <div class="button-row">
+    <a href="{{ url_for('download_pdf') }}">
+      <button class="btn-download">📄 PDF 리포트 다운로드</button>
+    </a>
+    <a href="{{ url_for('download_logs') }}">
+      <button class="btn-download">📝 로그 TXT 파일 다운로드</button>
+    </a>
+  </div>
   <h2>🛡️ 발견된 취약점</h2>
   {% if vulnerabilities %}
   <table>
