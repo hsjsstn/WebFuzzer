@@ -1,17 +1,32 @@
 from flask import Flask, render_template, request, redirect, url_for, send_file, jsonify, send_file
-from fuzzer import run_fuzzer
-from report import generate_pdf_report
+from main import main
 import threading
 import os
 import logging
+from unittest.mock import patch 
+import shutil
 
+# 🔥 /logs 경로 제외용 필터 클래스
+class ExcludeLogsFilter(logging.Filter):
+    def filter(self, record):
+        return '/logs' not in record.getMessage()
+
+# 기존 핸들러 제거 (중복 방지)
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+
+# 🔧 핸들러 설정 및 필터 적용
+file_handler = logging.FileHandler("fuzzer.log")
+file_handler.addFilter(ExcludeLogsFilter())
+
+stream_handler = logging.StreamHandler()
+stream_handler.addFilter(ExcludeLogsFilter())
+
+# 로깅 설정
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("fuzzer.log"),
-        logging.StreamHandler()
-    ]
+    handlers=[file_handler, stream_handler]
 )
 
 logger = logging.getLogger(__name__)
@@ -47,7 +62,6 @@ def loading():
     if not target_url:
         return "URL이 필요합니다.", 400
 
-    # 로그 시작 지점 기록
     try:
         with open("fuzzer.log", "rb") as f:
             f.seek(0, 2)
@@ -57,45 +71,35 @@ def loading():
 
     fuzzer_done = False
 
-    # 기존 fuzzer_logs.txt 파일 초기화
-    open("results/fuzzer_logs.txt", "w").close()
-
-
     def run_async():
-        urls, results, vulns, attempts = run_fuzzer(target_url, max_depth)
-        global fuzzer_data
+        global fuzzer_done, fuzzer_data
+
+        with patch('builtins.input', side_effect=[target_url, str(max_depth)]):
+        # 💡 fuzzer를 직접 받아오게 main() 수정 필요
+            urls, results, vulns, attempts = main()
+
         fuzzer_data["urls"] = urls
         fuzzer_data["results"] = results
         fuzzer_data["vulnerabilities"] = vulns
         fuzzer_data["attempts"] = attempts
+        
+        open("fuzzer.log", "w").close()
+        open("results/fuzzer_logs.txt", "w").close()
 
-        generate_pdf_report(
-            crawled_urls=urls,
-            extraction_results=results,
-            vulnerabilities=vulns,
-            attempts=attempts,
-            output_path="results/fuzzer_report.pdf"
-        )
+        with patch('builtins.input', side_effect=[target_url, str(max_depth)]):
+            main()
 
-        # 현재 로그 시작 시점 이후 로그만 백업
         try:
-            os.makedirs("results", exist_ok=True)
-            with open("fuzzer.log", "rb") as src:
-                src.seek(log_start_pos)
-                recent_logs = src.read().decode("utf-8", errors="ignore")
-            with open("results/fuzzer_logs.txt", "w", encoding="utf-8") as dst:
-                dst.write(recent_logs)
-            logger.info("[*] 로그 백업 완료: fuzzer_logs.txt")
+            shutil.copyfile("fuzzer.log", "results/fuzzer_logs.txt")
+            print("[*] 로그 복사 완료")
         except Exception as e:
-            logger.error(f"[!] 로그 파일 복사 중 오류: {e}")
+            print("[!] 로그 복사 실패:", e)
 
-        global fuzzer_done
         fuzzer_done = True
 
     threading.Thread(target=run_async).start()
 
-    return render_template("loading.html")
-
+    return render_template("loading.html") 
 
 @app.route("/logs")
 def get_logs():
@@ -113,14 +117,19 @@ def get_logs():
         "done": fuzzer_done
     })
 
-
 @app.route("/result")
 def result():
+    # fuzzer_data에서 취약점 정보를 가져옵니다.
+    vulnerabilities = fuzzer_data["vulnerabilities"]
+    attempts = fuzzer_data["attempts"]
+
+    # result.html 템플릿에 데이터를 전달하여 렌더링
     return render_template(
         "result.html",
-        vulnerabilities=fuzzer_data["vulnerabilities"],
-        attempts=fuzzer_data["attempts"]
+        vulnerabilities=vulnerabilities,
+        attempts=attempts
     )
+
 
 # pdf 다운로드
 @app.route('/download-pdf')

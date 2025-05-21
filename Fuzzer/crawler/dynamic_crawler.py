@@ -42,7 +42,6 @@ def extract_forms_dynamic(driver, current_url):
     return forms, independent_inputs
 
 def crawl_dynamic(driver, base_url, max_depth, visited_urls, extraction_results, robot_parser=None):
-    logger.info("[DynamicCrawler] Start.")
     queue = deque([(base_url, 0)])
     while queue:
         current_url, depth = queue.popleft()
@@ -62,5 +61,4 @@ def crawl_dynamic(driver, base_url, max_depth, visited_urls, extraction_results,
                 if u not in visited_urls:
                     queue.append((u, depth + 1))
         except Exception as e:
-            logger.error(f"[DynamicCrawler]  크롤링 중 오류: {e}")
-
+            logger.error(f"[DynamicCrawler] 크롤링 중 오류: {e}")

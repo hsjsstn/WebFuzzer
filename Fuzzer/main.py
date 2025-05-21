@@ -26,7 +26,6 @@ def main():
     for url in static:
         crawl_dynamic(driver, url, max_depth, visited, extraction, rp)
 
-
     driver.quit()
 
     forms = []
@@ -44,6 +43,8 @@ def main():
         fuzzer.vulnerabilities, fuzzer.attempts = [], []
 
     generate_pdf_report(static.union(visited), extraction, fuzzer.vulnerabilities, fuzzer.attempts)
+
+    return list(static.union(visited)), extraction, fuzzer.vulnerabilities, fuzzer.attempts
 
 if __name__ == "__main__":
     main()

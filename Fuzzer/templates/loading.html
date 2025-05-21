@@ -64,11 +64,11 @@
 </head>
 <body>
   <h1>⚙️ 퍼징 진행 중...</h1>
-
+<!-- 
   <div class="progress-bar">
     <div class="progress" id="progress-bar"></div>
   </div>
-  <p id="progress-text" style="text-align:center;">0%</p>
+  <p id="progress-text" style="text-align:center;">0%</p> -->
   
   
 
@@ -96,19 +96,19 @@
           logArea.scrollTop = logArea.scrollHeight;  // 항상 최신 위치로 스크롤
     
           // 진행도 계산은 임시로 랜덤하게
-          if (percent < 100) {
-            percent += Math.floor(Math.random() * 5) + 1;
-            percent = Math.min(percent, 100);
-            document.getElementById("progress-bar").style.width = percent + "%";
-            document.getElementById("progress-text").textContent = percent + "%";
-          }
+          // if (percent < 100) {
+          //   percent += Math.floor(Math.random() * 5) + 1;
+          //   percent = Math.min(percent, 100);
+          //   document.getElementById("progress-bar").style.width = percent + "%";
+          //   document.getElementById("progress-text").textContent = percent + "%";
+          // }
     
           // 완료되면 버튼을 눌러야 다음 페이지로 갈 수 있도록 유지
           // 자동 이동은 하지 않음
         });
     }
     
-    setInterval(updateProgress, 1500);  // 1.5초마다 체크
+    setInterval(updateProgress, 1000);  // 1.0초마다 체크
     </script>
 </body>
 </html>

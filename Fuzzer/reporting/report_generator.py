@@ -35,7 +35,7 @@ def safe_escape(text):
     """HTML 인코딩을 수행하기 전 None 값을 빈 문자열로 처리"""
     return escape(text) if text else ''
 
-def generate_pdf_report(crawled_urls, extraction_results, vulnerabilities, attempts, output_path='fuzzer_report.pdf'):
+def generate_pdf_report(crawled_urls, extraction_results, vulnerabilities, attempts, output_path='results/fuzzer_report.pdf'):
     """웹 퍼저 결과를 PDF로 생성"""
     register_fonts()
 
