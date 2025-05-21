@@ -38,10 +38,18 @@ class AsyncFuzzer:
 
     async def analyze_response(self, text, payload, form, status):
         found = None
-        if any(err in text.lower() for err in ['error', 'sql', 'syntax']):
+        with open('payloads.json', 'r', encoding='utf-8') as f:
+            self.payloads = json.load(f)
+        
+        if payload in self.payloads['sql_injection'] and any(err in text.lower() for err in ['error', 'sql', 'syntax']):
             found = 'SQL Injection'
-        elif payload in text:
+        elif any(xss_payload in text for xss_payload in self.payloads['xss']):
             found = 'XSS'
+        elif payload in self.payloads['command_injection'] and ("root:" in text or "uid=" in text or "command not found" not in text):
+            found = 'Command Injection'
+        
+       	
+       	
         if found:
             self.vulnerabilities.append({'type': found, 'payload': payload, 'form': form['action'], 'response_code': status})
         self.attempts.append({'form_action': form['action'], 'payload': payload, 'result': found or '취약점 없음'})
@@ -53,5 +61,4 @@ class AsyncFuzzer:
         async with aiohttp.ClientSession(connector=connector) as session:
             tasks = [self.fuzz_form(session, form, payload) for form in self.forms for category in self.payloads.values() for payload in category]
             await asyncio.gather(*tasks)
-
 
