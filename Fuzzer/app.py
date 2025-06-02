@@ -56,16 +56,18 @@ def loading():
     except ValueError:
         return "크롤링 깊이는 숫자로 입력해주세요.", 400
 
-    selected_payloads = request.form.getlist("payloads")  # ✔ 체크박스 리스트 가져오기
+    selected_payloads = request.form.getlist("payloads")
 
     if not target_url:
         return "URL이 필요합니다.", 400
 
+    # ✅ 퍼징 전에 로그 초기화
     try:
-        with open("fuzzer.log", "rb") as f:
-            f.seek(0, 2)
-            log_start_pos = f.tell()
-    except FileNotFoundError:
+        with open("fuzzer.log", "w") as f:
+            f.truncate()
+        log_start_pos = 0
+    except Exception as e:
+        print(f"[!] 로그 초기화 실패: {e}")
         log_start_pos = 0
 
     fuzzer_done = False
@@ -74,7 +76,6 @@ def loading():
         global fuzzer_done, fuzzer_data
 
         try:
-            # ✔ main에 직접 인자 전달
             urls, results, vulns, attempts = main(target_url, max_depth, selected_payloads)
 
             fuzzer_data["urls"] = urls
@@ -82,10 +83,7 @@ def loading():
             fuzzer_data["vulnerabilities"] = vulns
             fuzzer_data["attempts"] = attempts
 
-            # 로그 초기화 및 복사
-            open("fuzzer.log", "w").close()
-            open("results/fuzzer_logs.txt", "w").close()
-
+            # ✅ 퍼징 후 로그 복사만 (초기화 X)
             shutil.copyfile("fuzzer.log", "results/fuzzer_logs.txt")
             print("[*] 로그 복사 완료")
         except Exception as e:
@@ -95,7 +93,7 @@ def loading():
 
     threading.Thread(target=run_async).start()
 
-    return render_template("loading.html") 
+    return render_template("loading.html")
 
 @app.route("/logs")
 def get_logs():

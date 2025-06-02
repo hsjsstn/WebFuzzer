@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
+<html lang="ko"><head>
   <meta charset="UTF-8">
   <title>Web Fuzzer - 진행 중</title>
   <style>
@@ -60,6 +58,21 @@
       font-size: 0.9rem;
       padding: 2px 0;
     }
+
+    #to-result-btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ccc; /* 비활성화 기본 색 */
+            color: #666;
+            cursor: not-allowed;
+        }
+        #to-result-btn.active {
+            background-color: #4f46e5; /* 활성화 색  */
+            color: white;
+            cursor: pointer;
+        }
   </style>
 </head>
 <body>
@@ -69,22 +82,46 @@
     <div class="progress" id="progress-bar"></div>
   </div>
   <p id="progress-text" style="text-align:center;">0%</p> -->
-  
-  
 
   <h2>📄 로그</h2>
   <div class="log">
-    <pre id="log-area">로딩 중...</pre>
+    <pre id="log-area">
+</pre>
   </div>
 
   <div style="text-align: center; margin-top: 2rem;">
-    <form action="{{ url_for('result') }}" method="get">
-      <button type="submit" style="padding: 0.6rem 1.2rem; font-size: 1rem; border: none; border-radius: 8px; background: #4f46e5; color: white; cursor: pointer;">
+    <form action="/result" method="get">
+      <button type="submit" id="to-result-btn" class="active">
         결과 페이지로 이동 →
       </button>
     </form>
   </div>
   <script>
+    function checkLogs() {
+        fetch("/logs")
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("log-area").textContent = data.logs;
+
+                console.log("Log status: ", data.done);
+
+                if (data.done) {
+                    const btn = document.getElementById("to-result-btn");
+                    btn.disabled = false;
+                    btn.classList.add("active");
+
+                    btn.addEventListener("click", function () {
+                        window.location.href = "/result";
+                    });
+                } else {
+                    setTimeout(checkLogs, 1500);
+                }
+            })
+            .catch(err => console.error("로그 가져오기 실패:", err));
+    }
+
+        checkLogs();
+
     let percent = 0;
     
     function updateProgress() {
@@ -102,13 +139,11 @@
           //   document.getElementById("progress-bar").style.width = percent + "%";
           //   document.getElementById("progress-text").textContent = percent + "%";
           // }
-    
-          // 완료되면 버튼을 눌러야 다음 페이지로 갈 수 있도록 유지
-          // 자동 이동은 하지 않음
         });
     }
     
     setInterval(updateProgress, 1000);  // 1.0초마다 체크
+
     </script>
-</body>
-</html>
+
+</body></html>

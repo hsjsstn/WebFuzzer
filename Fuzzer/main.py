@@ -9,6 +9,29 @@ from crawler.dynamic_crawler import crawl_dynamic
 from fuzzing.async_fuzzer import AsyncFuzzer
 from reporting.report_generator import generate_pdf_report
 
+import os
+import sys
+
+# 🔧 콘솔과 파일에 동시 출력하는 클래스 
+class Logger:
+    def __init__(self, filename):
+        self.terminal = sys.__stdout__  # 원래 콘솔
+        self.log = open(filename, "w", encoding="utf-8")  # 새 로그 파일 (덮어쓰기)
+
+    def write(self, message):
+        message = str(message)
+        self.terminal.write(message)
+        self.log.write(message)
+
+    def flush(self):
+        self.terminal.flush()
+        self.log.flush()
+
+os.makedirs("results", exist_ok=True)
+log_path = "results/fuzzer_logs.txt"
+sys.stdout = Logger(log_path)
+sys.stderr = sys.stdout 
+
 def print_banner():
     print("""
 =================================================
@@ -81,8 +104,6 @@ def main(base_url=None, max_depth=None, selected_categories=None):
         fuzzer.vulnerabilities, fuzzer.attempts = [], []
 
     print("\n📄 PDF 리포트 생성 중...")
-    import os
-    os.makedirs("results", exist_ok=True)
     generate_pdf_report(
         crawled_urls=static_urls.union(visited),
         extraction_results=extraction,
