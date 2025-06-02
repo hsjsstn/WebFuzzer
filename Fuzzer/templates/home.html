@@ -1,4 +1,3 @@
-<!-- templates/home.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,13 +46,73 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        .payload-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .payload-section p {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .payload-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .payload-option {
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 5px;
+            width: 140px;
+            color: black;
+        }
+
+        .payload-option input[type="checkbox"] {
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
     <h1>Web Fuzzer</h1>
     <form action="{{ url_for('loading') }}" method="post">
         <input type="text" name="target_url" placeholder="크롤링할 URL 입력" required>
-        <input type="text" name="max_depth" placeholder="크롤링 깊이 입력" min="1" required>
+        <input type="text" name="max_depth" placeholder="크롤링 깊이 입력" required>
+
+        <div class="payload-section">
+            <p>🛡️ 사용 가능한 페이로드 유형:</p>
+            <div class="payload-grid">
+                <label class="payload-option">
+                    <input type="checkbox" name="payloads" value="sql_injection"> SQL Injection
+                </label>
+                <label class="payload-option">
+                    <input type="checkbox" name="payloads" value="xss"> XSS
+                </label>
+                <label class="payload-option">
+                    <input type="checkbox" name="payloads" value="command_injection"> Command Injection
+                </label>
+                <label class="payload-option">
+                    <input type="checkbox" name="payloads" value="path_traversal"> Path Traversal
+                </label>
+                <label class="payload-option">
+                    <input type="checkbox" name="payloads" value="ssti"> SSTI
+                </label>
+                <label class="payload-option">
+                    <input type="checkbox" name="payloads" value="open_redirect"> Open Redirect
+                </label>
+                <label class="payload-option">
+                    <input type="checkbox" name="payloads" value="csrf"> CSRF
+                </label>
+            </div>
+        </div>
+
         <button type="submit">크롤링 시작</button>
     </form>
 </body>

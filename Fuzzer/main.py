@@ -16,30 +16,52 @@ def print_banner():
 =================================================
     """)
 
-def get_user_inputs():
-    base_url = input("🌐 크롤링 시작 URL (예: http://localhost:4280): ").strip()
-    if not base_url.startswith("http"):
-        base_url = "http://" + base_url
+# get_user_inputs 함수는 직접 호출하지 않고, main()에서 인자로 받아 처리하도록 변경
+# def get_user_inputs():
+#     base_url = input("🌐 크롤링 시작 URL (예: http://localhost:4280): ").strip()
+#     if not base_url.startswith("http"):
+#         base_url = "http://" + base_url
+#
+#     max_depth = int(input("🔁 최대 크롤링 깊이 (예: 2): ").strip())
+#
+#     all_categories = ['sql_injection', 'xss', 'command_injection', 'path_traversal', 'ssti', 'open_redirect', 'csrf']
+#     print("\n🛡️  사용 가능한 페이로드 유형:")
+#     for c in all_categories:
+#         print(f" - {c}")
+#
+#     selected_input = input("\n🎯 사용할 페이로드 유형 (콤마로 구분): ").strip()
+#     selected_categories = [c.strip() for c in selected_input.split(',') if c.strip() in all_categories]
+#
+#     if not selected_categories:
+#         print("❌ 유효한 페이로드 유형이 없습니다. 종료합니다.")
+#         exit(1)
+#
+#     return base_url, max_depth, selected_categories
 
-    max_depth = int(input("🔁 최대 크롤링 깊이 (예: 2): ").strip())
-
-    all_categories = ['sql_injection', 'xss', 'command_injection', 'path_traversal', 'ssti', 'open_redirect', 'csrf']
-    print("\n🛡️  사용 가능한 페이로드 유형:")
-    for c in all_categories:
-        print(f" - {c}")
-
-    selected_input = input("\n🎯 사용할 페이로드 유형 (콤마로 구분): ").strip()
-    selected_categories = [c.strip() for c in selected_input.split(',') if c.strip() in all_categories]
-
-    if not selected_categories:
-        print("❌ 유효한 페이로드 유형이 없습니다. 종료합니다.")
-        exit(1)
-
-    return base_url, max_depth, selected_categories
-
-def main():
+# 🔧 main() 함수가 인자를 직접 받도록 수정
+def main(base_url=None, max_depth=None, selected_categories=None):
     print_banner()
-    base_url, max_depth, selected_categories = get_user_inputs()
+
+    # Flask에서 직접 받은 인자가 없다면, 기존 입력 방식 유지
+    if base_url is None or max_depth is None or selected_categories is None:
+        # base_url, max_depth, selected_categories = get_user_inputs()
+        base_url = input("🌐 크롤링 시작 URL (예: http://localhost:4280): ").strip()
+        if not base_url.startswith("http"):
+            base_url = "http://" + base_url
+
+        max_depth = int(input("🔁 최대 크롤링 깊이 (예: 2): ").strip())
+
+        all_categories = ['sql_injection', 'xss', 'command_injection', 'path_traversal', 'ssti', 'open_redirect', 'csrf']
+        print("\n🛡️  사용 가능한 페이로드 유형:")
+        for c in all_categories:
+            print(f" - {c}")
+
+        selected_input = input("\n🎯 사용할 페이로드 유형 (콤마로 구분): ").strip()
+        selected_categories = [c.strip() for c in selected_input.split(',') if c.strip() in all_categories]
+
+        if not selected_categories:
+            print("❌ 유효한 페이로드 유형이 없습니다. 종료합니다.")
+            exit(1)
 
     rp = urllib.robotparser.RobotFileParser()
     rp.set_url(urljoin(base_url, '/robots.txt'))
@@ -58,10 +80,8 @@ def main():
 
     visited, extraction = set(), []
 
-    # 동적 크롤링은 최초 진입점 하나로부터 queue 기반 탐색
     entry_url = list(static_urls)[0] if static_urls else base_url
     crawl_dynamic(driver, entry_url, max_depth, visited, extraction, rp)
-
 
     driver.quit()
 
@@ -99,4 +119,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
