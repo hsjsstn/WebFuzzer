@@ -16,28 +16,6 @@ def print_banner():
 =================================================
     """)
 
-# get_user_inputs 함수는 직접 호출하지 않고, main()에서 인자로 받아 처리하도록 변경
-# def get_user_inputs():
-#     base_url = input("🌐 크롤링 시작 URL (예: http://localhost:4280): ").strip()
-#     if not base_url.startswith("http"):
-#         base_url = "http://" + base_url
-#
-#     max_depth = int(input("🔁 최대 크롤링 깊이 (예: 2): ").strip())
-#
-#     all_categories = ['sql_injection', 'xss', 'command_injection', 'path_traversal', 'ssti', 'open_redirect', 'csrf']
-#     print("\n🛡️  사용 가능한 페이로드 유형:")
-#     for c in all_categories:
-#         print(f" - {c}")
-#
-#     selected_input = input("\n🎯 사용할 페이로드 유형 (콤마로 구분): ").strip()
-#     selected_categories = [c.strip() for c in selected_input.split(',') if c.strip() in all_categories]
-#
-#     if not selected_categories:
-#         print("❌ 유효한 페이로드 유형이 없습니다. 종료합니다.")
-#         exit(1)
-#
-#     return base_url, max_depth, selected_categories
-
 # 🔧 main() 함수가 인자를 직접 받도록 수정
 def main(base_url=None, max_depth=None, selected_categories=None):
     print_banner()

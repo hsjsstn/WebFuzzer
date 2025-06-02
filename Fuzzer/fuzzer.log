@@ -1,1 +1,5 @@
 2025-06-02 13:24:57,072 - INFO - 127.0.0.1 - - [02/Jun/2025 13:24:57] "GET /result HTTP/1.1" 200 -
+2025-06-02 13:35:30,461 - INFO -  * Detected change in '/Users/soojin/Desktop/Web Fuzzer/Fuzzer/main.py', reloading
+2025-06-02 13:35:30,569 - INFO -  * Restarting with stat
+2025-06-02 13:35:30,961 - WARNING -  * Debugger is active!
+2025-06-02 13:35:30,968 - INFO -  * Debugger PIN: 104-001-820
