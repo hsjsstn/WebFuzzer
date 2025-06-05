@@ -21,6 +21,7 @@
     }
 
     h2 {
+      margin-top: 2rem !important;
       margin-bottom: 1rem !important;
       font-size: 1.4rem !important; 
       font-weight: bold !important;
@@ -57,11 +58,6 @@
       overflow-y: auto;
     }
 
-    h2 {
-      margin-top: 2rem !important;
-      margin-bottom: 0.5rem !important;
-    }
-
     .log pre, .urls ul {
       margin: 0;
     }
@@ -96,19 +92,20 @@
 </head>
 <body>
     {% include 'header.html' %}
-    
-    <h1>퍼징 진행 중...</h1>
-<!-- 
-  <div class="progress-bar">
-    <div class="progress" id="progress-bar"></div>
-  </div>
-  <p id="progress-text" style="text-align:center;">0%</p> -->
+    <div class="main"> 
+      <h1>퍼징 진행 중...</h1>
+    <!-- 
+      <div class="progress-bar">
+        <div class="progress" id="progress-bar"></div>
+      </div>
+      <p id="progress-text" style="text-align:center;">0%</p> -->
 
-  <h2>로그</h2>
-  <div class="log">
-    <pre id="log-area">
-</pre>
-  </div>
+      <h2>로그</h2>
+      <div class="log">
+        <pre id="log-area"></pre>
+      </div>
+    </div>
+    
 
   <div style="text-align: center; margin-top: 2rem;">
     <form action="/result" method="get">
