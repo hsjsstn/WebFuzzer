@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
 </head>
 <body>
-    {% include 'header.html' %}
+  {% include 'header.html' %}
 
   <h2>퍼징 결과</h2>
+
   <div class="button-row">
     <a href="{{ url_for('download_pdf') }}">
       <button class="btn-download">PDF 리포트 다운로드</button>
@@ -19,8 +20,26 @@
     <a href="{{ url_for('download_logs') }}">
       <button class="btn-download">로그 TXT 파일 다운로드</button>
     </a>
+    <!-- <button id="analyze-btn">AI 요약 및 대응 가이드</button> -->
   </div>
+
+  <!-- 🔍 AI 요약 결과 위치를 위로 -->
+  <!-- <div id="ai-summary" class="ai-summary"></div> -->
+
+  <!-- 🔒 숨겨진 텍스트 블록 -->
+  <!-- {% if vulnerabilities %}
+  <div id="vuln-results" style="display:none;">
+    {% for v in vulnerabilities %}
+- URL: {{ v.form }}
+  - 유형: {{ v.type }}
+  - 페이로드: {{ v.payload }}
+
+    {% endfor %}
+  </div>
+  {% endif %} -->
+
   <h2>발견된 취약점</h2>
+
   {% if vulnerabilities %}
   <table>
     <thead>
@@ -45,5 +64,29 @@
   {% endif %}
 
   {% include 'footer.html' %}
+
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("analyze-btn").addEventListener("click", async () => {
+      console.log("버튼 클릭됨");
+
+      const vulnText = document.getElementById("vuln-results").innerText;
+      console.log("요약할 텍스트:", vulnText);
+
+      const response = await fetch("http://127.0.0.1:5001", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ content: vulnText })
+      });
+
+      const data = await response.json();
+      console.log("AI 응답:", data);
+
+      document.getElementById("ai-summary").innerText = data.choices[0].message.content;
+    });
+  });
+</script>
 </body>
 </html>

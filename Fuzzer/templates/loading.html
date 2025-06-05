@@ -77,6 +77,19 @@
       cursor: not-allowed;
     }
 
+    #to-result-btn:disabled {
+      background-color: #ccc;
+      color: #666;
+      cursor: not-allowed;
+      pointer-events: none; /* 🔒 hover, click 완전 차단 */
+      box-shadow: none;
+      transform: none;
+    }
+
+    #to-result-btn:disabled:hover {
+      background-color: #ccc; /* hover 효과 없애기 */
+    }
+
     #to-result-btn.active {
       background-color: #4f46e5; /* 활성화 색  */
       color: white;
@@ -109,7 +122,7 @@
 
   <div style="text-align: center; margin-top: 2rem;">
     <form action="/result" method="get">
-      <button type="submit" id="to-result-btn" class="active">
+      <button type="submit" id="to-result-btn" disabled>
         결과 페이지로 이동 →
       </button>
     </form>
@@ -118,6 +131,7 @@
   {% include 'footer.html' %}
   <script>
     function checkLogs() {
+       const btn = document.getElementById("to-result-btn");
         fetch("/logs")
             .then(res => res.json())
             .then(data => {
@@ -126,15 +140,16 @@
                 console.log("Log status: ", data.done);
 
                 if (data.done) {
-                    const btn = document.getElementById("to-result-btn");
+                   
                     btn.disabled = false;
                     btn.classList.add("active");
-
                     btn.addEventListener("click", function () {
                         window.location.href = "/result";
                     });
                 } else {
-                    setTimeout(checkLogs, 1500);
+                  btn.disabled = true;
+                  btn.classList.remove("active");
+                  setTimeout(checkLogs, 1500);
                 }
             })
             .catch(err => console.error("로그 가져오기 실패:", err));
