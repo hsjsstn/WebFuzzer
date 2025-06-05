@@ -1,17 +1,29 @@
 <html lang="ko"><head>
   <meta charset="UTF-8">
   <title>Web Fuzzer - 진행 중</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       background: #121212;
       color: #eee;
       font-family: sans-serif;
       padding: 2rem 15%;
+      margin-top: 100px !important;
     }
 
     h1 {
-      text-align: center;
-      margin-bottom: 1rem;
+      text-align: center !important;
+      margin-bottom: 1rem !important;
+      font-size: 1.8rem !important; 
+      font-weight: bold !important;
+    }
+
+    h2 {
+      margin-bottom: 1rem !important;
+      font-size: 1.4rem !important; 
+      font-weight: bold !important;
     }
 
     .progress-bar {
@@ -46,8 +58,8 @@
     }
 
     h2 {
-      margin-top: 2rem;
-      margin-bottom: 0.5rem;
+      margin-top: 2rem !important;
+      margin-bottom: 0.5rem !important;
     }
 
     .log pre, .urls ul {
@@ -60,30 +72,39 @@
     }
 
     #to-result-btn {
-            padding: 10px 20px;
-            font-size: 18px;
-            border: none;
-            border-radius: 5px;
-            background-color: #ccc; /* 비활성화 기본 색 */
-            color: #666;
-            cursor: not-allowed;
-        }
-        #to-result-btn.active {
-            background-color: #4f46e5; /* 활성화 색  */
-            color: white;
-            cursor: pointer;
-        }
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ccc; /* 비활성화 기본 색 */
+      color: #666;
+      cursor: not-allowed;
+    }
+
+    #to-result-btn.active {
+      background-color: #4f46e5; /* 활성화 색  */
+      color: white;
+      cursor: pointer;
+    }
+
+    #to-result-btn.active:hover {
+      background-color: #6366f1;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
+    }
   </style>
 </head>
 <body>
-  <h1>⚙️ 퍼징 진행 중...</h1>
+    {% include 'header.html' %}
+    
+    <h1>퍼징 진행 중...</h1>
 <!-- 
   <div class="progress-bar">
     <div class="progress" id="progress-bar"></div>
   </div>
   <p id="progress-text" style="text-align:center;">0%</p> -->
 
-  <h2>📄 로그</h2>
+  <h2>로그</h2>
   <div class="log">
     <pre id="log-area">
 </pre>
@@ -96,6 +117,8 @@
       </button>
     </form>
   </div>
+
+  {% include 'footer.html' %}
   <script>
     function checkLogs() {
         fetch("/logs")

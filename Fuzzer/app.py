@@ -46,6 +46,10 @@ os.makedirs("results", exist_ok=True)  # 폴더 없으면 자동 생성
 def home():
     return render_template('home.html')
 
+@app.route('/start')
+def start():
+    return render_template('start.html')
+
 @app.route("/loading", methods=["POST"])
 def loading():
     global fuzzer_done, log_start_pos
@@ -132,6 +136,10 @@ def download_logs():
         return send_file("results/fuzzer_logs.txt", as_attachment=True)
     except Exception as e:
         return f"로그 파일 다운로드 중 오류 발생: {e}", 500
+    
+@app.route('/guide')
+def guide():
+    return render_template('guide.html')
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

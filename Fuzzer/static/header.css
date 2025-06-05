@@ -1,0 +1,35 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #12121c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: white;
+    display: inline-block;
+}
+
+header nav {
+    display: flex;
+    justify-content: center; 
+    gap: 2rem;
+    padding: 1rem;
+}
+
+header nav a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+header nav a:hover {
+    color: white;
+   text-decoration: underline;
+}

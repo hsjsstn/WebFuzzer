@@ -1,0 +1,80 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 150px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.payload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.payload-section p, p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.payload-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 660px;
+}
+
+.payload-card {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: white;
+    padding: 15px 10px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+    user-select: none;
+}
+
+.payload-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.payload-card.selected {
+    background: linear-gradient(135deg, #10b981, #059669);
+    box-shadow: 0 0 0 4px #34d399 inset;
+}
+
+.payload-card input[type="checkbox"] {
+    display: none;
+}
+
+button {
+    padding: 14px 28px !important;
+     background-color: #4f46e5 !important;
+    font-size: 1rem !important;
+    margin: 0 10px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+button:hover {
+    background-color: #6366f1 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6) !important;
+}
+  

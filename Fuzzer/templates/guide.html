@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Fuzzer - 가이드</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='guide.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="guide-body">
+  {% include 'header.html' %}
+  <div class="guide-container">
+
+    <main class="guide-main">
+      <h2 class="guide-title">WebFuzzer 사용 가이드</h2>
+
+      <!-- 퍼저 구성 -->
+      <section class="guide-section">
+        <h3 class="guide-subtitle">퍼저 구성</h3>
+        <ul class="guide-list">
+          <li><strong class="text-highlight">정적 크롤링:</strong> 사이트 링크 구조 분석 (HTML 파싱 기반)</li>
+          <li><strong class="text-highlight">동적 크롤링:</strong> JavaScript 렌더링 후 동적 링크/폼 추출</li>
+          <li><strong class="text-highlight">폼 수집:</strong> 탐지된 입력 필드/폼 구조 정리</li>
+          <li><strong class="text-highlight">비동기 퍼징:</strong> 각 취약점 유형별 페이로드를 병렬 테스트</li>
+          <li><strong class="text-highlight">PDF 리포트 생성:</strong> 결과 요약 + 상세 내용 시각화</li>
+        </ul>
+      </section>
+
+      <!-- 공격 유형 -->
+      <section class="guide-section">
+        <h3 class="guide-subtitle">지원하는 공격 유형</h3>
+        <div class="attack-grid">
+          {% set attacks = [
+            ("💥 SQL Injection", "쿼리 조작을 통해 인증 우회 또는 데이터베이스 노출을 유도합니다."),
+            ("🖍️ XSS", "악성 스크립트를 삽입해 사용자 세션 탈취 등의 공격을 수행합니다."),
+            ("📂 Path Traversal", "디렉터리 경로를 조작하여 민감한 파일을 읽는 공격입니다."),
+            ("🧪 Command Injection", "OS 명령어를 삽입하여 시스템 명령 실행을 시도합니다."),
+            ("🌀 SSTI", "템플릿 엔진의 취약점을 이용해 서버 코드 실행을 유도합니다."),
+            ("🔀 Open Redirect", "사용자를 악의적인 외부 페이지로 유도하는 리디렉션 공격입니다."),
+            ("🔐 CSRF", "타 사용자의 권한으로 요청을 보내는 공격입니다. 토큰 미사용 시 발생.")
+          ] %}
+          {% for title, desc in attacks %}
+          <div class="attack-card">
+            <h4 class="attack-title">{{ title }}</h4>
+            <p class="attack-desc">{{ desc }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+  
+    {% include 'footer.html' %}
+  </div>
+</body>
+</html>

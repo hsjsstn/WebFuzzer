@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Web Fuzzer - 퍼징하기</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='start.css') }}">
+</head>
+<body>
+    {% include 'header.html' %}
+    <form action="{{ url_for('loading') }}" method="post">
+        <p>퍼징할 주소 입력</p>
+        <input type="text" name="target_url" placeholder="타겟 URL 입력" required>
+        <input type="text" name="max_depth" placeholder="크롤링 깊이 입력" required>
+        
+        <div class="payload-section">
+            <p>사용 가능한 페이로드 유형:</p>
+            <div class="payload-grid">
+                <label class="payload-card">
+                    SQL Injection
+                    <input type="checkbox" name="payloads" value="sql_injection">
+                </label>
+                <label class="payload-card">
+                    XSS
+                    <input type="checkbox" name="payloads" value="xss">
+                </label>
+                <label class="payload-card">
+                    Command Injection
+                    <input type="checkbox" name="payloads" value="command_injection">
+                </label>
+                <label class="payload-card">
+                    Path Traversal
+                    <input type="checkbox" name="payloads" value="path_traversal">
+                </label>
+                <label class="payload-card">
+                    SSTI
+                    <input type="checkbox" name="payloads" value="ssti">
+                </label>
+                <label class="payload-card">
+                    Open Redirect
+                    <input type="checkbox" name="payloads" value="open_redirect">
+                </label>
+
+                <!-- 빈 공간 카드 -->
+                <div></div>
+
+                <label class="payload-card">
+                    CSRF
+                    <input type="checkbox" name="payloads" value="csrf">
+                </label>
+
+                <div></div>
+            </div>
+        </div>
+        <br>
+        <button type="submit">퍼징 시작</button>
+    </form>
+    {% include 'footer.html' %}
+
+    <script>
+        document.querySelectorAll('.payload-card').forEach(card => {
+            card.addEventListener('click', () => {
+                const checkbox = card.querySelector('input[type="checkbox"]');
+                checkbox.checked = !checkbox.checked;
+                card.classList.toggle('selected', checkbox.checked);
+            });
+        });
+    </script>
+</body>
+</html>
