@@ -4,6 +4,7 @@ import threading
 import os
 import logging
 import shutil
+from server import api_bp
 
 # 🔥 /logs 경로 제외용 필터 클래스
 class ExcludeLogsFilter(logging.Filter):
@@ -31,6 +32,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+app.register_blueprint(api_bp)
 
 fuzzer_done = False
 fuzzer_data = {
@@ -65,7 +67,7 @@ def loading():
     if not target_url:
         return "URL이 필요합니다.", 400
 
-    # ✅ 퍼징 전에 로그 초기화
+    # 퍼징 전에 로그 초기화
     try:
         with open("fuzzer.log", "w") as f:
             f.truncate()
@@ -87,7 +89,7 @@ def loading():
             fuzzer_data["vulnerabilities"] = vulns
             fuzzer_data["attempts"] = attempts
 
-            # ✅ 퍼징 후 로그 복사만 (초기화 X)
+            # 퍼징 후 로그 복사만 (초기화 X)
             shutil.copyfile("fuzzer.log", "results/fuzzer_logs.txt")
             print("[*] 로그 복사 완료")
         except Exception as e:

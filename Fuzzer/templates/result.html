@@ -11,82 +11,108 @@
 <body>
   {% include 'header.html' %}
 
-  <h2>퍼징 결과</h2>
+  <h2 class="text-2xl font-bold text-center my-6">퍼징 결과</h2>
 
-  <div class="button-row">
+  <div class="flex justify-center mb-4 gap-4">
     <a href="{{ url_for('download_pdf') }}">
       <button class="btn-download">PDF 리포트 다운로드</button>
     </a>
     <a href="{{ url_for('download_logs') }}">
       <button class="btn-download">로그 TXT 파일 다운로드</button>
     </a>
-    <!-- <button id="analyze-btn">AI 요약 및 대응 가이드</button> -->
   </div>
 
-  <!-- 🔍 AI 요약 결과 위치를 위로 -->
-  <!-- <div id="ai-summary" class="ai-summary"></div> -->
-
-  <!-- 🔒 숨겨진 텍스트 블록 -->
-  <!-- {% if vulnerabilities %}
-  <div id="vuln-results" style="display:none;">
-    {% for v in vulnerabilities %}
-- URL: {{ v.form }}
-  - 유형: {{ v.type }}
-  - 페이로드: {{ v.payload }}
-
-    {% endfor %}
+  <!-- 탭 버튼 -->
+  <div class="flex justify-center space-x-4 mb-6">
+    <button onclick="showTab('ai')" class="tab-button active" id="tab-ai">AI 요약</button>
+    <button onclick="showTab('vulns')" class="tab-button" id="tab-vulns">유형별 취약점</button>
   </div>
-  {% endif %} -->
 
-  <h2>발견된 취약점</h2>
+  <!-- AI 요약 -->
+  <div id="tab-ai-content" class="tab-content">
+    <div id="ai-summary" class="rounded p-6 shadow mx-4 md:mx-24">
+      <h3 class="text-xl font-semibold mb-3">AI 요약 및 대응책</h3>
+      <p id="ai-summary-text" class="text-white whitespace-pre-line"></p>
+    </div>
+  </div>
 
-  {% if vulnerabilities %}
-  <table>
-    <thead>
-      <tr>
-        <th>대상 URL</th>
-        <th>취약점 유형</th>
-        <th>페이로드</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for v in vulnerabilities %}
-        <tr>
-          <td>{{ v.form }}</td>
-          <td>{{ v.type }}</td>
-          <td>{{ v.payload }}</td>
-        </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-  {% else %}
-    <p style="text-align:center; color:#aaa;">발견된 취약점이 없습니다.</p>
-  {% endif %}
+  <!-- 유형별 취약점 -->
+  <div id="tab-vulns-content" class="tab-content hidden">
+    <div class="mx-4 md:mx-24 bg-#2c2c40 rounded p-6 shadow">
+      <h3 class="text-xl font-semibold mb-3">발견된 취약점</h3>
+
+      {% if vulnerabilities %}
+    <table>
+        <thead>
+          <tr>
+            <th>대상 URL</th>
+            <th>취약점 유형</th>
+            <th>페이로드</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for v in vulnerabilities %}
+            <tr>
+              <td>{{ v.form }}</td>
+              <td>{{ v.type }}</td>
+              <td>{{ v.payload }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p class="text-gray-500 text-center">발견된 취약점이 없습니다.</p>
+      {% endif %}
+    </div>
+  </div>
 
   {% include 'footer.html' %}
 
   <script>
-  window.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("analyze-btn").addEventListener("click", async () => {
-      console.log("버튼 클릭됨");
+    // 탭 UI 토글
+    function showTab(tab) {
+      document.getElementById("tab-ai-content").classList.toggle("hidden", tab !== "ai");
+      document.getElementById("tab-vulns-content").classList.toggle("hidden", tab !== "vulns");
 
-      const vulnText = document.getElementById("vuln-results").innerText;
-      console.log("요약할 텍스트:", vulnText);
+      document.getElementById("tab-ai").classList.toggle("active", tab === "ai");
+      document.getElementById("tab-vulns").classList.toggle("active", tab === "vulns");
+    }
 
-      const response = await fetch("http://127.0.0.1:5001", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ content: vulnText })
-      });
+    // AI 요약 요청
+    window.addEventListener("DOMContentLoaded", async () => {
+      const vulnText = document.getElementById("vuln-results")?.innerText.trim();
+      if (!vulnText || vulnText === "발견된 취약점이 없습니다.") {
+        document.getElementById("ai-summary-text").innerText = "발견된 취약점이 없습니다.";
+        return;
+      }
 
-      const data = await response.json();
-      console.log("AI 응답:", data);
+      try {
+        const response = await fetch("/ai-summary", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ content: vulnText })
+        });
 
-      document.getElementById("ai-summary").innerText = data.choices[0].message.content;
+        const data = await response.json();
+        document.getElementById("ai-summary-text").innerText = data.summary;
+      } catch (error) {
+        document.getElementById("ai-summary-text").innerText = "AI 요약 요청 중 오류가 발생했습니다.";
+        console.error(error);
+      }
     });
-  });
-</script>
+  </script>
+
+  <!-- vuln text 숨기기용 -->
+  <div id="vuln-results" style="display:none;">
+    {% if vulnerabilities %}
+      {% for v in vulnerabilities %}
+- 유형: {{ v.type }}
+- 페이로드: {{ v.payload }}
+
+      {% endfor %}
+    {% else %}
+  발견된 취약점이 없습니다.
+    {% endif %}
+  </div>
 </body>
 </html>
