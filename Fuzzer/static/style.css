@@ -41,7 +41,7 @@ h1, h2 {
 }
   
 /* 입력창 */
-input[type="text"], textarea {
+input[type="text"], input[type="password"], input[type="email"], textarea {
     width: 100%;
     padding: 0.75rem;
     margin: 0.5rem 0 1rem 0;
@@ -59,6 +59,7 @@ input[type="text"], textarea {
     transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .btn:hover, button:hover {
