@@ -60,7 +60,7 @@ os.makedirs("results", exist_ok=True)  # 폴더 없으면 자동 생성
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
-        if 'user_id' not in session:
+        if 'user' not in session:
             # JavaScript alert와 함께 로그인 페이지로 리디렉션
             response = make_response("""
                 <script>
