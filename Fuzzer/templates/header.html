@@ -3,9 +3,10 @@
     <h4 class="text-xl font-bold tracking-wider">Web Fuzzer</h4>
     <nav>
         <a href="/" class="mx-3 hover:underline">홈</a>
-        <a href="/start" class="mx-3 hover:underline">퍼징 시작</a>
         <a href="/guide" class="mx-3 hover:underline">가이드</a>
+        <a href="/start" class="mx-3 hover:underline">퍼징 시작</a>
         {% if session.get("user") %}
+        <a href="/history" class="mx-3 hover:underline">퍼징 내역</a>
         <a href="/logout" class="mx-3 hover:underline">로그아웃</a>
         {% else %}
         <a href="/login" class="mx-3 hover:underline">로그인</a>

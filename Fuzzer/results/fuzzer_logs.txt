@@ -1,152 +1,151 @@
-2025-06-12 12:24:06,586 - INFO - 127.0.0.1 - - [12/Jun/2025 12:24:06] "POST /loading HTTP/1.1" 200 -
-2025-06-12 12:24:06,583 - INFO - 
+2025-06-23 15:12:42,572 - INFO - 
 =================================================
    🕷️ WebFuzzer CLI - Intelligent Vulnerability Scanner
 =================================================
-2025-06-12 12:24:06,620 - INFO - 127.0.0.1 - - [12/Jun/2025 12:24:06] "[36mGET /static/header.css HTTP/1.1[0m" 304 -
-2025-06-12 12:24:06,620 - INFO - 127.0.0.1 - - [12/Jun/2025 12:24:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-06-12 12:24:06,650 - INFO - 🔎 정적 크롤링 중...
-2025-06-12 12:24:06,651 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/
-2025-06-12 12:24:06,746 - INFO - [StaticCrawler] 방문 중: http://localhost:8000
-2025-06-12 12:24:06,763 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/instructions.php
-2025-06-12 12:24:06,803 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/setup.php
-2025-06-12 12:24:06,946 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/brute
-2025-06-12 12:24:06,987 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/exec
-2025-06-12 12:24:07,008 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/csrf
-2025-06-12 12:24:07,023 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/fi/?page=include.php
-2025-06-12 12:24:07,037 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/upload
-2025-06-12 12:24:07,054 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/captcha
-2025-06-12 12:24:07,066 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/sqli
-2025-06-12 12:24:07,074 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/sqli_blind
-2025-06-12 12:24:07,082 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/weak_id
-2025-06-12 12:24:07,089 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/xss_d
-2025-06-12 12:24:07,098 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/xss_r
-2025-06-12 12:24:07,106 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/xss_s
-2025-06-12 12:24:07,130 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/csp
-2025-06-12 12:24:07,139 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/javascript
-2025-06-12 12:24:07,148 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/open_redirect
-2025-06-12 12:24:07,155 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/cryptography
-2025-06-12 12:24:07,164 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/api
-2025-06-12 12:24:07,239 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/security.php
-2025-06-12 12:24:07,245 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/phpinfo.php
-2025-06-12 12:24:07,287 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/about.php
-2025-06-12 12:24:07,294 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/logout.php
-2025-06-12 12:24:07,301 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=readme
-2025-06-12 12:24:07,306 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=PDF
-2025-06-12 12:24:07,312 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=changelog
-2025-06-12 12:24:07,318 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=copying
-2025-06-12 12:24:07,324 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.ar.md
-2025-06-12 12:24:07,327 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.zh.md
-2025-06-12 12:24:07,330 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.fr.md
-2025-06-12 12:24:07,333 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.ko.md
-2025-06-12 12:24:07,336 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.fa.md
-2025-06-12 12:24:07,339 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.pl.md
-2025-06-12 12:24:07,341 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.pt.md
-2025-06-12 12:24:07,343 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.es.md
-2025-06-12 12:24:07,345 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.tr.md
-2025-06-12 12:24:07,348 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.id.md
-2025-06-12 12:24:07,350 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.vi.md
-2025-06-12 12:24:07,352 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#download
-2025-06-12 12:24:07,357 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#i-want-to-run-dvwa-on-a-different-port
-2025-06-12 12:24:07,519 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/config/config.inc.php.dist
-2025-06-12 12:24:07,525 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/compose.yml
-2025-06-12 12:24:07,527 - WARNING - Status Code is Wrong!!: 404 - http://localhost:8000/compose.yml
-2025-06-12 12:24:07,528 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#php-configuration
-2025-06-12 12:24:07,532 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#database-setup
-2025-06-12 12:24:07,540 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?page=file1.php
-2025-06-12 12:24:07,545 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?page=file2.php
-2025-06-12 12:24:07,549 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?page=file3.php
-2025-06-12 12:24:07,553 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/source/low.php?redirect=info.php?id=1
-2025-06-12 12:24:07,554 - WARNING - Status Code is Wrong!!: 404 - http://localhost:8000/source/low.php?redirect=info.php?id=1
-2025-06-12 12:24:07,554 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/source/low.php?redirect=info.php?id=2
-2025-06-12 12:24:07,558 - WARNING - Status Code is Wrong!!: 404 - http://localhost:8000/source/low.php?redirect=info.php?id=2
-2025-06-12 12:24:07,558 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_apache2handler
-2025-06-12 12:24:07,562 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_core
-2025-06-12 12:24:07,567 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_ctype
-2025-06-12 12:24:07,571 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_curl
-2025-06-12 12:24:07,575 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_date
-2025-06-12 12:24:07,579 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_dom
-2025-06-12 12:24:07,583 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_fileinfo
-2025-06-12 12:24:07,588 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_filter
-2025-06-12 12:24:07,592 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_gd
-2025-06-12 12:24:07,596 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_hash
-2025-06-12 12:24:07,600 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_iconv
-2025-06-12 12:24:07,604 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_json
-2025-06-12 12:24:07,608 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_libxml
-2025-06-12 12:24:07,612 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_mbstring
-2025-06-12 12:24:07,616 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_mysqli
-2025-06-12 12:24:07,620 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_mysqlnd
-2025-06-12 12:24:07,624 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_openssl
-2025-06-12 12:24:07,628 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pcre
-2025-06-12 12:24:07,632 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pdo
-2025-06-12 12:24:07,636 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pdo_mysql
-2025-06-12 12:24:07,641 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pdo_sqlite
-2025-06-12 12:24:07,646 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_phar
-2025-06-12 12:24:07,650 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_posix
-2025-06-12 12:24:07,654 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_random
-2025-06-12 12:24:07,658 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_reflection
-2025-06-12 12:24:07,662 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_session
-2025-06-12 12:24:07,669 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_simplexml
-2025-06-12 12:24:07,673 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_sodium
-2025-06-12 12:24:07,680 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_spl
-2025-06-12 12:24:07,685 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_sqlite3
-2025-06-12 12:24:07,689 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_standard
-2025-06-12 12:24:07,697 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_tokenizer
-2025-06-12 12:24:07,701 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_xml
-2025-06-12 12:24:07,708 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_xmlreader
-2025-06-12 12:24:07,713 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_xmlwriter
-2025-06-12 12:24:07,717 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_zlib
-2025-06-12 12:24:07,722 - INFO - 🎥 동적 크롤링 중...
-2025-06-12 12:24:13,517 - INFO - [DynamicCrawler] Start.
-2025-06-12 12:24:16,148 - INFO - [DynamicCrawler] 방문: http://localhost:8000
-2025-06-12 12:24:17,773 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/weak_id
-2025-06-12 12:24:19,363 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/xss_d
-2025-06-12 12:24:21,954 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php
-2025-06-12 12:24:23,735 - INFO - [DynamicCrawler] 방문: http://localhost:8000/setup.php
-2025-06-12 12:24:25,807 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/captcha
-2025-06-12 12:24:27,415 - INFO - [DynamicCrawler] 방문: http://localhost:8000/security.php
-2025-06-12 12:24:29,015 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/csp
-2025-06-12 12:24:30,647 - INFO - [DynamicCrawler] 방문: http://localhost:8000/login.php
-2025-06-12 12:24:32,202 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/xss_r
-2025-06-12 12:24:33,792 - INFO - [DynamicCrawler] 방문: http://localhost:8000/about.php
-2025-06-12 12:24:35,415 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/xss_s
-2025-06-12 12:24:37,032 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=include.php
-2025-06-12 12:24:38,644 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/open_redirect
-2025-06-12 12:24:40,250 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/brute
-2025-06-12 12:24:41,884 - INFO - [DynamicCrawler] 방문: http://localhost:8000/phpinfo.php
-2025-06-12 12:24:43,600 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/cryptography
-2025-06-12 12:24:45,208 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/sqli
-2025-06-12 12:24:46,900 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/api
-2025-06-12 12:24:48,491 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/exec
-2025-06-12 12:24:51,624 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/csrf
-2025-06-12 12:24:53,235 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/javascript
-2025-06-12 12:24:54,830 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/sqli_blind
-2025-06-12 12:24:56,427 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/upload
-2025-06-12 12:25:04,233 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=PDF
-2025-06-12 12:25:05,872 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.id.md
-2025-06-12 12:25:07,411 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.ar.md
-2025-06-12 12:25:10,549 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=readme
-2025-06-12 12:25:12,268 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.ko.md
-2025-06-12 12:25:13,808 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.fa.md
-2025-06-12 12:25:15,361 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.pt.md
-2025-06-12 12:25:16,919 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.zh.md
-2025-06-12 12:25:18,466 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.vi.md
-2025-06-12 12:25:20,069 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.es.md
-2025-06-12 12:25:21,600 - INFO - [DynamicCrawler] 방문: http://localhost:8000/compose.yml
-2025-06-12 12:25:23,153 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.pl.md
-2025-06-12 12:25:26,271 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=changelog
-2025-06-12 12:25:27,895 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=copying
-2025-06-12 12:25:29,504 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.tr.md
-2025-06-12 12:25:31,055 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.fr.md
-2025-06-12 12:25:51,230 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=file2.php
-2025-06-12 12:25:52,841 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=file3.php
-2025-06-12 12:25:54,449 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=file1.php
-2025-06-12 12:25:59,158 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/open_redirect/source/info.php?id=1
-2025-06-12 12:26:00,770 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/open_redirect/source/info.php?id=2
-2025-06-12 12:26:31,639 - INFO - [DynamicCrawler] 방문: http://localhost:8000/docs/DVWA_v1.3.pdf
-2025-06-12 12:26:45,633 - INFO - 📝 폼 수집 중...
-2025-06-12 12:26:45,633 - INFO - 🚀 퍼징 시작...
-2025-06-12 12:26:45,634 - INFO - 선택된 페이로드 카테고리: sql_injection, xss
-2025-06-12 12:26:45,634 - INFO - [AsyncFuzzer] Start
-2025-06-12 12:26:46,359 - INFO - 📄 PDF 리포트 생성 중...
-2025-06-12 12:26:46,867 - INFO - ✅ 퍼징 완료 및 리포트 저장됨: results/fuzzer_report.pdf
+2025-06-23 15:12:42,577 - INFO - 127.0.0.1 - - [23/Jun/2025 15:12:42] "POST /loading HTTP/1.1" 200 -
+2025-06-23 15:12:42,604 - INFO - 🔎 정적 크롤링 중...
+2025-06-23 15:12:42,604 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/
+2025-06-23 15:12:42,611 - INFO - 127.0.0.1 - - [23/Jun/2025 15:12:42] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-23 15:12:42,612 - INFO - 127.0.0.1 - - [23/Jun/2025 15:12:42] "GET /static/header.css HTTP/1.1" 200 -
+2025-06-23 15:12:42,625 - INFO - [StaticCrawler] 방문 중: http://localhost:8000
+2025-06-23 15:12:42,637 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/instructions.php
+2025-06-23 15:12:42,661 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/setup.php
+2025-06-23 15:12:42,728 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/brute
+2025-06-23 15:12:42,743 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/exec
+2025-06-23 15:12:42,753 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/csrf
+2025-06-23 15:12:42,763 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/fi/?page=include.php
+2025-06-23 15:12:42,778 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/upload
+2025-06-23 15:12:42,789 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/captcha
+2025-06-23 15:12:42,799 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/sqli
+2025-06-23 15:12:42,809 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/sqli_blind
+2025-06-23 15:12:42,818 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/weak_id
+2025-06-23 15:12:42,828 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/xss_d
+2025-06-23 15:12:42,837 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/xss_r
+2025-06-23 15:12:42,848 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/xss_s
+2025-06-23 15:12:42,856 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/csp
+2025-06-23 15:12:42,863 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/javascript
+2025-06-23 15:12:42,872 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/open_redirect
+2025-06-23 15:12:42,891 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/cryptography
+2025-06-23 15:12:42,926 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/vulnerabilities/api
+2025-06-23 15:12:42,974 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/security.php
+2025-06-23 15:12:42,980 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/phpinfo.php
+2025-06-23 15:12:43,009 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/about.php
+2025-06-23 15:12:43,014 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/logout.php
+2025-06-23 15:12:43,020 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=readme
+2025-06-23 15:12:43,025 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=PDF
+2025-06-23 15:12:43,030 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=changelog
+2025-06-23 15:12:43,034 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?doc=copying
+2025-06-23 15:12:43,039 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.ar.md
+2025-06-23 15:12:43,041 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.zh.md
+2025-06-23 15:12:43,043 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.fr.md
+2025-06-23 15:12:43,045 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.ko.md
+2025-06-23 15:12:43,047 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.fa.md
+2025-06-23 15:12:43,049 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.pl.md
+2025-06-23 15:12:43,052 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.pt.md
+2025-06-23 15:12:43,054 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.es.md
+2025-06-23 15:12:43,057 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.tr.md
+2025-06-23 15:12:43,058 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.id.md
+2025-06-23 15:12:43,060 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/README.vi.md
+2025-06-23 15:12:43,062 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#download
+2025-06-23 15:12:43,067 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#i-want-to-run-dvwa-on-a-different-port
+2025-06-23 15:12:43,074 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/config/config.inc.php.dist
+2025-06-23 15:12:43,076 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/compose.yml
+2025-06-23 15:12:43,078 - WARNING - Status Code is Wrong!!: 404 - http://localhost:8000/compose.yml
+2025-06-23 15:12:43,078 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#php-configuration
+2025-06-23 15:12:43,083 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#database-setup
+2025-06-23 15:12:43,089 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?page=file1.php
+2025-06-23 15:12:43,093 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?page=file2.php
+2025-06-23 15:12:43,098 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/?page=file3.php
+2025-06-23 15:12:43,108 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/source/low.php?redirect=info.php?id=1
+2025-06-23 15:12:43,112 - WARNING - Status Code is Wrong!!: 404 - http://localhost:8000/source/low.php?redirect=info.php?id=1
+2025-06-23 15:12:43,112 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/source/low.php?redirect=info.php?id=2
+2025-06-23 15:12:43,116 - WARNING - Status Code is Wrong!!: 404 - http://localhost:8000/source/low.php?redirect=info.php?id=2
+2025-06-23 15:12:43,117 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_apache2handler
+2025-06-23 15:12:43,124 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_core
+2025-06-23 15:12:43,129 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_ctype
+2025-06-23 15:12:43,134 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_curl
+2025-06-23 15:12:43,139 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_date
+2025-06-23 15:12:43,144 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_dom
+2025-06-23 15:12:43,150 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_fileinfo
+2025-06-23 15:12:43,155 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_filter
+2025-06-23 15:12:43,160 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_gd
+2025-06-23 15:12:43,164 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_hash
+2025-06-23 15:12:43,170 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_iconv
+2025-06-23 15:12:43,175 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_json
+2025-06-23 15:12:43,181 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_libxml
+2025-06-23 15:12:43,186 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_mbstring
+2025-06-23 15:12:43,191 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_mysqli
+2025-06-23 15:12:43,196 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_mysqlnd
+2025-06-23 15:12:43,201 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_openssl
+2025-06-23 15:12:43,206 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pcre
+2025-06-23 15:12:43,211 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pdo
+2025-06-23 15:12:43,215 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pdo_mysql
+2025-06-23 15:12:43,219 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_pdo_sqlite
+2025-06-23 15:12:43,224 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_phar
+2025-06-23 15:12:43,228 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_posix
+2025-06-23 15:12:43,232 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_random
+2025-06-23 15:12:43,237 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_reflection
+2025-06-23 15:12:43,245 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_session
+2025-06-23 15:12:43,249 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_simplexml
+2025-06-23 15:12:43,277 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_sodium
+2025-06-23 15:12:43,283 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_spl
+2025-06-23 15:12:43,288 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_sqlite3
+2025-06-23 15:12:43,293 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_standard
+2025-06-23 15:12:43,297 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_tokenizer
+2025-06-23 15:12:43,303 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_xml
+2025-06-23 15:12:43,307 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_xmlreader
+2025-06-23 15:12:43,313 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_xmlwriter
+2025-06-23 15:12:43,318 - INFO - [StaticCrawler] 방문 중: http://localhost:8000/#module_zlib
+2025-06-23 15:12:43,322 - INFO - 🎥 동적 크롤링 중...
+2025-06-23 15:12:44,530 - INFO - [DynamicCrawler] Start.
+2025-06-23 15:12:46,129 - INFO - [DynamicCrawler] 방문: http://localhost:8000/setup.php
+2025-06-23 15:12:47,732 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/exec
+2025-06-23 15:12:49,337 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/sqli
+2025-06-23 15:12:50,994 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/api
+2025-06-23 15:12:52,587 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/upload
+2025-06-23 15:12:54,207 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/cryptography
+2025-06-23 15:12:55,819 - INFO - [DynamicCrawler] 방문: http://localhost:8000
+2025-06-23 15:12:57,420 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/sqli_blind
+2025-06-23 15:12:59,015 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/brute
+2025-06-23 15:13:00,613 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/csp
+2025-06-23 15:13:02,195 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/javascript
+2025-06-23 15:13:03,805 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/xss_r
+2025-06-23 15:13:06,402 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php
+2025-06-23 15:13:08,166 - INFO - [DynamicCrawler] 방문: http://localhost:8000/phpinfo.php
+2025-06-23 15:13:09,804 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/weak_id
+2025-06-23 15:13:11,384 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/csrf
+2025-06-23 15:13:12,989 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/xss_d
+2025-06-23 15:13:14,612 - INFO - [DynamicCrawler] 방문: http://localhost:8000/security.php
+2025-06-23 15:13:16,208 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/xss_s
+2025-06-23 15:13:18,317 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/captcha
+2025-06-23 15:13:19,912 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=include.php
+2025-06-23 15:13:21,516 - INFO - [DynamicCrawler] 방문: http://localhost:8000/about.php
+2025-06-23 15:13:23,131 - INFO - [DynamicCrawler] 방문: http://localhost:8000/login.php
+2025-06-23 15:13:24,688 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/open_redirect
+2025-06-23 15:14:00,381 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=changelog
+2025-06-23 15:14:01,991 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.ar.md
+2025-06-23 15:14:03,549 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=copying
+2025-06-23 15:14:05,157 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.fa.md
+2025-06-23 15:14:06,712 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.pl.md
+2025-06-23 15:14:08,283 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.vi.md
+2025-06-23 15:14:09,866 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.zh.md
+2025-06-23 15:14:11,417 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=PDF
+2025-06-23 15:14:13,009 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.fr.md
+2025-06-23 15:14:14,565 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.es.md
+2025-06-23 15:14:17,785 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.id.md
+2025-06-23 15:14:19,333 - INFO - [DynamicCrawler] 방문: http://localhost:8000/compose.yml
+2025-06-23 15:14:20,880 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.pt.md
+2025-06-23 15:14:22,446 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.ko.md
+2025-06-23 15:14:24,020 - INFO - [DynamicCrawler] 방문: http://localhost:8000/instructions.php?doc=readme
+2025-06-23 15:14:27,274 - INFO - [DynamicCrawler] 방문: http://localhost:8000/README.tr.md
+2025-06-23 15:14:45,769 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=file3.php
+2025-06-23 15:14:47,374 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=file2.php
+2025-06-23 15:14:48,977 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/fi/?page=file1.php
+2025-06-23 15:14:55,201 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/open_redirect/source/info.php?id=2
+2025-06-23 15:14:56,805 - INFO - [DynamicCrawler] 방문: http://localhost:8000/vulnerabilities/open_redirect/source/info.php?id=1
+2025-06-23 15:14:58,532 - INFO - 📝 폼 수집 중...
+2025-06-23 15:14:58,533 - INFO - 🚀 퍼징 시작...
+2025-06-23 15:14:58,533 - INFO - 선택된 페이로드 카테고리: sql_injection, command_injection, path_traversal, ssti, open_redirect, csrf
+2025-06-23 15:14:58,533 - INFO - [AsyncFuzzer] Start
+2025-06-23 15:14:59,361 - INFO - 📄 PDF 리포트 생성 중...
+2025-06-23 15:14:59,992 - INFO - ✅ 퍼징 완료 및 리포트 저장됨: results/fuzzer_report.pdf

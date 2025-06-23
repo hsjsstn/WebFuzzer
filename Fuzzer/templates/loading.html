@@ -121,64 +121,53 @@
     
 
   <div style="text-align: center; margin-top: 2rem;">
-    <form action="/result" method="get">
-      <button type="submit" id="to-result-btn" disabled>
+    <form id="result-form" action="" method="get">
+      <button type="submit" id="to-result-btn" class="btn-download" disabled>
         결과 페이지로 이동 →
       </button>
     </form>
   </div>
 
   {% include 'footer.html' %}
-  <script>
-    function checkLogs() {
-       const btn = document.getElementById("to-result-btn");
-        fetch("/logs")
-            .then(res => res.json())
-            .then(data => {
-                document.getElementById("log-area").textContent = data.logs;
-
-                console.log("Log status: ", data.done);
-
-                if (data.done) {
-                   
-                    btn.disabled = false;
-                    btn.classList.add("active");
-                    btn.addEventListener("click", function () {
-                        window.location.href = "/result";
-                    });
-                } else {
-                  btn.disabled = true;
-                  btn.classList.remove("active");
-                  setTimeout(checkLogs, 1500);
-                }
-            })
-            .catch(err => console.error("로그 가져오기 실패:", err));
-    }
-
-        checkLogs();
-
-    let percent = 0;
+<script>
+  function checkLogs() {
+    const btn = document.getElementById("to-result-btn");
+    const form = document.getElementById("result-form");
     
-    function updateProgress() {
-      fetch("/logs")
-        .then(response => response.json())
-        .then(data => {
-          const logArea = document.querySelector(".log pre");
-          logArea.textContent = data.logs;
-          logArea.scrollTop = logArea.scrollHeight;  // 항상 최신 위치로 스크롤
-    
-          // 진행도 계산은 임시로 랜덤하게
-          // if (percent < 100) {
-          //   percent += Math.floor(Math.random() * 5) + 1;
-          //   percent = Math.min(percent, 100);
-          //   document.getElementById("progress-bar").style.width = percent + "%";
-          //   document.getElementById("progress-text").textContent = percent + "%";
-          // }
-        });
-    }
-    
-    setInterval(updateProgress, 1000);  // 1.0초마다 체크
+    fetch("/logs")
+      .then(res => res.json())
+      .then(data => {
+        console.log("로그 응답 데이터:", data); // ✅ 콘솔 확인용
+        console.log("result_id 값:", data.result_id); // 🔍 result_id만
+        
+        const logArea = document.getElementById("log-area");
+        logArea.textContent = data.logs;
+        logArea.scrollTop = logArea.scrollHeight;
 
-    </script>
+        if (data.done && data.result_id) {
+          btn.disabled = false;
+          btn.classList.add("active");
+          form.action = `/result/${data.result_id}`;  // ✅ 여기서 form action 지정
+        } else {
+          btn.disabled = true;
+          btn.classList.remove("active");
+          setTimeout(checkLogs, 1500);
+        }
+      })
+      .catch(err => console.error("로그 가져오기 실패:", err));
+  }
 
-</body></html>
+  checkLogs();
+
+  setInterval(() => {
+    fetch("/logs")
+      .then(res => res.json())
+      .then(data => {
+        const logArea = document.getElementById("log-area");
+        logArea.textContent = data.logs;
+        logArea.scrollTop = logArea.scrollHeight;
+      });
+  }, 1000);
+</script>
+  </body>
+</html>

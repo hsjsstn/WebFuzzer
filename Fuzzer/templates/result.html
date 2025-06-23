@@ -130,43 +130,50 @@
   </script>
 
   <script>
-    function showTab(tab) {
-      ["ai", "dashboard", "vulns"].forEach(id => {
-        document.getElementById(`tab-${id}-content`).classList.toggle("hidden", id !== tab);
-        document.getElementById(`tab-${id}`).classList.toggle("active", id === tab);
-      });
+     let pageChartInstance = null;
+  let vulnChartInstance = null;
+
+  function showTab(tab) {
+    ["ai", "dashboard", "vulns"].forEach(id => {
+      document.getElementById(`tab-${id}-content`).classList.toggle("hidden", id !== tab);
+      document.getElementById(`tab-${id}`).classList.toggle("active", id === tab);
+    });
+  }
+
+  window.addEventListener("DOMContentLoaded", async () => {
+    const vulnText = document.getElementById("vuln-results")?.innerText.trim();
+    if (!vulnText || vulnText === "발견된 취약점이 없습니다.") {
+      document.getElementById("ai-summary-text").innerText = "발견된 취약점이 없습니다.";
+    } else {
+      try {
+        const response = await fetch("/ai-summary", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ content: vulnText })
+        });
+        const data = await response.json();
+        document.getElementById("ai-summary-text").innerText = data.summary;
+      } catch (error) {
+        document.getElementById("ai-summary-text").innerText = "AI 요약 요청 중 오류가 발생했습니다.";
+        console.error(error);
+      }
     }
 
-    window.addEventListener("DOMContentLoaded", async () => {
-      const vulnText = document.getElementById("vuln-results")?.innerText.trim();
-      if (!vulnText || vulnText === "발견된 취약점이 없습니다.") {
-        document.getElementById("ai-summary-text").innerText = "발견된 취약점이 없습니다.";
-      } else {
-        try {
-          const response = await fetch("/ai-summary", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ content: vulnText })
-          });
-          const data = await response.json();
-          document.getElementById("ai-summary-text").innerText = data.summary;
-        } catch (error) {
-          document.getElementById("ai-summary-text").innerText = "AI 요약 요청 중 오류가 발생했습니다.";
-          console.error(error);
-        }
-      }
+    renderDashboard();
+  });
 
-      renderDashboard();
-    });
+  function renderDashboard() {
+    const vulnData = JSON.parse(document.getElementById("vuln-data-json").textContent || "{}");
+    const vulnerabilities = JSON.parse(document.getElementById("vulnerabilities-json").textContent || "[]");
+    const attempts = JSON.parse(document.getElementById("attempts-json").textContent || "[]");
 
-    function renderDashboard() {
-    const vulnData = JSON.parse(document.getElementById("vuln-data-json").textContent);
-    const vulnerabilities = JSON.parse(document.getElementById("vulnerabilities-json").textContent);
-    const attempts = JSON.parse(document.getElementById("attempts-json").textContent);
+    // 🔹 기존 차트 제거
+    if (vulnChartInstance) vulnChartInstance.destroy();
+    if (pageChartInstance) pageChartInstance.destroy();
 
     // 🔹 유형별 취약점 차트
     const ctx = document.getElementById('vulnChart').getContext('2d');
-    new Chart(ctx, {
+    vulnChartInstance = new Chart(ctx, {
       type: 'pie',
       data: {
         labels: Object.keys(vulnData),
@@ -180,20 +187,24 @@
       },
       options: {
         responsive: true,
-        plugins: {
-          legend: { position: 'bottom' }
-        }
+        plugins: { legend: { position: 'bottom' } }
       }
     });
 
     // 🔹 가장 많이 발견된 유형
     const total = Object.values(vulnData).reduce((a, b) => a + b, 0);
-    const maxType = Object.entries(vulnData).reduce((a, b) => b[1] > a[1] ? b : a);
-    document.getElementById("most-common-type").innerText =
-      `${maxType[0]} (${((maxType[1] / total) * 100).toFixed(1)}%)`;
+    if (total > 0) {
+      const maxType = Object.entries(vulnData).reduce((a, b) => b[1] > a[1] ? b : a);
+      document.getElementById("most-common-type").innerText =
+        `${maxType[0]} (${((maxType[1] / total) * 100).toFixed(1)}%)`;
+    } else {
+      document.getElementById("most-common-type").innerText = "-";
+    }
 
     // 🔹 성공률
-    const successRate = ((vulnerabilities.length / attempts.length) * 100).toFixed(1);
+    const successRate = attempts.length > 0
+      ? ((vulnerabilities.length / attempts.length) * 100).toFixed(1)
+      : "0.0";
     document.getElementById("success-rate").innerText =
       `${vulnerabilities.length} / ${attempts.length} (${successRate}%)`;
 
@@ -204,7 +215,7 @@
       pageCounts[page] = (pageCounts[page] || 0) + 1;
     });
     const ctx2 = document.getElementById('pageChart').getContext('2d');
-    new Chart(ctx2, {
+    pageChartInstance = new Chart(ctx2, {
       type: 'bar',
       data: {
         labels: Object.keys(pageCounts),

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>내 퍼징 결과 목록</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      color: #eee;
+      font-family: sans-serif;
+      padding: 2rem 15%;
+      padding-top: 160px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem !important;
+      font-size: 1.8rem !important; 
+      font-weight: bold !important;
+    }
+
+    .result-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .result-table th, .result-table td {
+      padding: 0.75rem;
+      border-bottom: 1px solid #444;
+      text-align: center;
+    }
+
+    .result-table th {
+      background-color: #3a3a4d;
+      font-weight: bold;
+    }
+
+    .result-table td.danger {
+      color: #ff6b6b;
+      font-weight: bold;
+    }
+
+    .action-btn {
+      background-color: #4f46e5;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .action-btn:hover {
+      background-color: #6366f1;
+    }
+
+    .empty-message {
+      text-align: center;
+      margin-top: 2rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  {% include 'header.html' %}
+
+  <h2>내 퍼징 결과</h2>
+
+  {% if results %}
+    <table class="result-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>타겟 URL</th>
+          <th>취약점 수</th>
+          <th>날짜</th>
+          <th>공개 설정</th>
+          <th>보기</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for r in results %}
+        <tr>
+          <td>{{ r.id }}</td>
+          <td style="text-align: left;">{{ r.target_url }}</td>
+          <td class="{{ 'danger' if r.vuln_count > 0 else '' }}">{{ r.vuln_count }}</td>
+          <td>{{ r.created_at }}</td>
+          <td>{{ r.visibility }}</td>
+          <td>
+            <a href="{{ url_for('view_result', result_id=r.id) }}" class="action-btn">보기</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %}
+    <p class="empty-message">아직 저장된 퍼징 결과가 없습니다.</p>
+  {% endif %}
+
+  {% include 'footer.html' %}
+</body>
+</html>
