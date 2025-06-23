@@ -23,217 +23,125 @@
     </a>
   </div>
 
-  <!-- 탭 버튼 -->
-  <div class="flex justify-center space-x-4 mb-6">
-    <button onclick="showTab('ai')" class="tab-button active" id="tab-ai">AI 요약</button>
-    <button onclick="showTab('dashboard')" class="tab-button" id="tab-dashboard">대시보드</button>
-    <button onclick="showTab('vulns')" class="tab-button" id="tab-vulns">유형별 취약점</button>
-  </div>
-
-  <!-- AI 요약 -->
-  <div id="tab-ai-content" class="tab-content">
-    <div id="ai-summary" class="rounded p-6 shadow">
-      <h3 class="text-xl font-semibold mb-3">AI 요약 및 대응책</h3>
-      <p id="ai-summary-text" class="text-white whitespace-pre-line"></p>
-    </div>
-  </div>
-
   <!-- 대시보드 -->
-  <div id="tab-dashboard-content" class="tab-content hidden">
-    <div class="rounded-lg p-6 text-white" style="width: 700px; margin: 0 auto;">
-      <h3 class="text-2xl font-semibold mb-6 text-center">취약점 통계 대시보드</h3>
-      <div class="flex flex-col md:flex-row gap-6 items-start">
+  <div class="rounded-lg p-6 text-white" style="width: 700px; margin: 0 auto;">
+    <h3 class="text-2xl font-semibold mb-6 text-center">취약점 통계 대시보드</h3>
+    <div class="flex flex-col md:flex-row gap-6 items-start">
 
-        <!-- 왼쪽 -->
-        <div class="flex-1">
-          <h4 class="text-lg font-bold mb-2">⚔️ 페이지별 취약점 분포</h4>
-          <canvas id="pageChart" style="width: 100%; max-width: 700px; height: 600px;"></canvas>
-        </div>
-
-        <!-- 오른쪽 -->
-        <div class="flex-1 space-y-6">
-          <div class="p-4 bg-gray-700 rounded-lg shadow">
-            <h4 class="text-lg font-bold mb-2">📌 가장 많이 발견된 취약점</h4>
-            <p id="most-common-type" class="text-xl text-blue-300"></p>
-          </div>
-          <div class="p-4 bg-gray-700 rounded-lg shadow">
-            <h4 class="text-lg font-bold mb-2">📈 성공률 (발견 / 시도)</h4>
-            <p id="success-rate" class="text-xl text-green-300"></p>
-          </div>
-          <div class="p-4 bg-gray-700 rounded-lg shadow">
-            <h4 class="text-lg font-bold mb-2">🎯 취약점 유형 분포</h4>
-            <canvas id="vulnChart" style="width: 100%; max-width: 500px; height: 300px;"></canvas>
-          </div>
-        </div>
-
+      <!-- 왼쪽 -->
+      <div class="flex-1">
+        <h4 class="text-lg font-bold mb-2">⚔️ 페이지별 취약점 분포</h4>
+        <canvas id="pageChart" style="width: 100%; max-width: 700px; height: 600px;"></canvas>
       </div>
-    </div> 
-  </div>
 
-  <!-- 유형별 취약점 -->
-  <div id="tab-vulns-content" class="tab-content hidden">
-    <div class="mx-4 md:mx-24 bg-#2c2c40 rounded p-6 shadow">
-      <h3 class="text-xl font-semibold mb-3">발견된 취약점</h3>
+      <!-- 오른쪽 -->
+      <div class="flex-1 space-y-6">
+        <div class="p-4 bg-gray-700 rounded-lg shadow">
+          <h4 class="text-lg font-bold mb-2">📌 가장 많이 발견된 취약점</h4>
+          <p id="most-common-type" class="text-xl text-blue-300"></p>
+        </div>
+        <div class="p-4 bg-gray-700 rounded-lg shadow">
+          <h4 class="text-lg font-bold mb-2">📈 성공률 (발견 / 시도)</h4>
+          <p id="success-rate" class="text-xl text-green-300"></p>
+        </div>
+        <div class="p-4 bg-gray-700 rounded-lg shadow">
+          <h4 class="text-lg font-bold mb-2">🎯 취약점 유형 분포</h4>
+          <canvas id="vulnChart" style="width: 100%; max-width: 500px; height: 300px;"></canvas>
+        </div>
+      </div>
 
-      {% if vulnerabilities %}
-    <table>
-        <thead>
-          <tr>
-            <th>대상 URL</th>
-            <th>취약점 유형</th>
-            <th>페이로드</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for v in vulnerabilities %}
-            <tr>
-              <td>{{ v.form }}</td>
-              <td>{{ v.type }}</td>
-              <td>{{ v.payload }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      {% else %}
-      <p class="text-gray-500 text-center">발견된 취약점이 없습니다.</p>
-      {% endif %}
     </div>
-  </div>
+  </div> 
 
   {% include 'footer.html' %}
 
-  <!-- vuln text 숨기기용 -->
-  <div id="vuln-results" style="display:none;">
-    {% if vulnerabilities %}
-      {% for v in vulnerabilities %}
-- 유형: {{ v.type }}
-- 페이로드: {{ v.payload }}
-      {% endfor %}
-    {% else %}
-  발견된 취약점이 없습니다.
-    {% endif %}
-  </div>
-
-  <!-- 유형별 취약점 수 -->
+  <!-- JSON 데이터 -->
   <script id="vuln-data-json" type="application/json">
     {{ vulnCounts | tojson | safe }}
   </script>
-
-  <!-- 취약점 상세 목록 -->
   <script id="vulnerabilities-json" type="application/json">
     {{ vulnerabilities | tojson | safe }}
   </script>
-
-  <!-- 전체 시도 내역 -->
   <script id="attempts-json" type="application/json">
     {{ attempts | tojson | safe }}
   </script>
 
+  <!-- JS 차트 렌더링 -->
   <script>
-     let pageChartInstance = null;
-  let vulnChartInstance = null;
+    let pageChartInstance = null;
+    let vulnChartInstance = null;
 
-  function showTab(tab) {
-    ["ai", "dashboard", "vulns"].forEach(id => {
-      document.getElementById(`tab-${id}-content`).classList.toggle("hidden", id !== tab);
-      document.getElementById(`tab-${id}`).classList.toggle("active", id === tab);
-    });
-  }
+    function renderDashboard() {
+      const vulnData = JSON.parse(document.getElementById("vuln-data-json").textContent || "{}");
+      const vulnerabilities = JSON.parse(document.getElementById("vulnerabilities-json").textContent || "[]");
+      const attempts = JSON.parse(document.getElementById("attempts-json").textContent || "[]");
 
-  window.addEventListener("DOMContentLoaded", async () => {
-    const vulnText = document.getElementById("vuln-results")?.innerText.trim();
-    if (!vulnText || vulnText === "발견된 취약점이 없습니다.") {
-      document.getElementById("ai-summary-text").innerText = "발견된 취약점이 없습니다.";
-    } else {
-      try {
-        const response = await fetch("/ai-summary", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ content: vulnText })
-        });
-        const data = await response.json();
-        document.getElementById("ai-summary-text").innerText = data.summary;
-      } catch (error) {
-        document.getElementById("ai-summary-text").innerText = "AI 요약 요청 중 오류가 발생했습니다.";
-        console.error(error);
+      if (vulnChartInstance) vulnChartInstance.destroy();
+      if (pageChartInstance) pageChartInstance.destroy();
+
+      // 유형별 취약점 차트
+      const ctx = document.getElementById('vulnChart').getContext('2d');
+      vulnChartInstance = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: Object.keys(vulnData),
+          datasets: [{
+            label: '취약점 유형별 개수',
+            data: Object.values(vulnData),
+            backgroundColor: [
+              '#4f46e5', '#e11d48', '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6', '#ec4899'
+            ],
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: 'bottom' } }
+        }
+      });
+
+      // 가장 많이 발견된 유형
+      const total = Object.values(vulnData).reduce((a, b) => a + b, 0);
+      if (total > 0) {
+        const maxType = Object.entries(vulnData).reduce((a, b) => b[1] > a[1] ? b : a);
+        document.getElementById("most-common-type").innerText =
+          `${maxType[0]} (${((maxType[1] / total) * 100).toFixed(1)}%)`;
+      } else {
+        document.getElementById("most-common-type").innerText = "-";
       }
+
+      // 성공률
+      const successRate = attempts.length > 0
+        ? ((vulnerabilities.length / attempts.length) * 100).toFixed(1)
+        : "0.0";
+      document.getElementById("success-rate").innerText =
+        `${vulnerabilities.length} / ${attempts.length} (${successRate}%)`;
+
+      // 페이지별 분포
+      const pageCounts = {};
+      vulnerabilities.forEach(v => {
+        const page = v.form;
+        pageCounts[page] = (pageCounts[page] || 0) + 1;
+      });
+      const ctx2 = document.getElementById('pageChart').getContext('2d');
+      pageChartInstance = new Chart(ctx2, {
+        type: 'bar',
+        data: {
+          labels: Object.keys(pageCounts),
+          datasets: [{
+            label: '페이지별 취약점 수',
+            data: Object.values(pageCounts),
+            backgroundColor: '#3b82f6'
+          }]
+        },
+        options: {
+          responsive: true,
+          indexAxis: 'y',
+          plugins: { legend: { display: false } }
+        }
+      });
     }
 
-    renderDashboard();
-  });
-
-  function renderDashboard() {
-    const vulnData = JSON.parse(document.getElementById("vuln-data-json").textContent || "{}");
-    const vulnerabilities = JSON.parse(document.getElementById("vulnerabilities-json").textContent || "[]");
-    const attempts = JSON.parse(document.getElementById("attempts-json").textContent || "[]");
-
-    // 🔹 기존 차트 제거
-    if (vulnChartInstance) vulnChartInstance.destroy();
-    if (pageChartInstance) pageChartInstance.destroy();
-
-    // 🔹 유형별 취약점 차트
-    const ctx = document.getElementById('vulnChart').getContext('2d');
-    vulnChartInstance = new Chart(ctx, {
-      type: 'pie',
-      data: {
-        labels: Object.keys(vulnData),
-        datasets: [{
-          label: '취약점 유형별 개수',
-          data: Object.values(vulnData),
-          backgroundColor: [
-            '#4f46e5', '#e11d48', '#f59e0b', '#10b981', '#3b82f6', '#8b5cf6', '#ec4899'
-          ],
-        }]
-      },
-      options: {
-        responsive: true,
-        plugins: { legend: { position: 'bottom' } }
-      }
-    });
-
-    // 🔹 가장 많이 발견된 유형
-    const total = Object.values(vulnData).reduce((a, b) => a + b, 0);
-    if (total > 0) {
-      const maxType = Object.entries(vulnData).reduce((a, b) => b[1] > a[1] ? b : a);
-      document.getElementById("most-common-type").innerText =
-        `${maxType[0]} (${((maxType[1] / total) * 100).toFixed(1)}%)`;
-    } else {
-      document.getElementById("most-common-type").innerText = "-";
-    }
-
-    // 🔹 성공률
-    const successRate = attempts.length > 0
-      ? ((vulnerabilities.length / attempts.length) * 100).toFixed(1)
-      : "0.0";
-    document.getElementById("success-rate").innerText =
-      `${vulnerabilities.length} / ${attempts.length} (${successRate}%)`;
-
-    // 🔹 페이지별 분포
-    const pageCounts = {};
-    vulnerabilities.forEach(v => {
-      const page = v.form;
-      pageCounts[page] = (pageCounts[page] || 0) + 1;
-    });
-    const ctx2 = document.getElementById('pageChart').getContext('2d');
-    pageChartInstance = new Chart(ctx2, {
-      type: 'bar',
-      data: {
-        labels: Object.keys(pageCounts),
-        datasets: [{
-          label: '페이지별 취약점 수',
-          data: Object.values(pageCounts),
-          backgroundColor: '#3b82f6'
-        }]
-      },
-      options: {
-        responsive: true,
-        indexAxis: 'y',
-        plugins: { legend: { display: false } }
-      }
-    });
-  }
-
-  document.addEventListener("DOMContentLoaded", renderDashboard);
+    document.addEventListener("DOMContentLoaded", renderDashboard);
   </script>
 </body>
 </html>
