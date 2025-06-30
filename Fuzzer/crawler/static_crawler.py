@@ -12,7 +12,7 @@ class StaticCrawler:
         self.robot_parser = robot_parser
         self.visited = set()
         self.to_visit = deque([base_url])
-        self.urls = set()
+        self.extraction_results = []
 
     def is_valid_url(self, url):
         parsed = urlparse(url)
@@ -24,6 +24,25 @@ class StaticCrawler:
             logger.info(f"robots.txt 금지 URL : {url}")
             return False
         return True
+
+    def extract_forms(self, soup, current_url):
+        forms, independent_inputs = [], []
+        for form in soup.find_all('form'):
+            action = form.get('action') or current_url
+            method = form.get('method', 'get').lower()
+            inputs = [
+                {'tag': i.name, 'type': i.get('type', i.name), 'name': i.get('name')}
+                for i in form.find_all(['input', 'textarea'])
+            ]
+        
+            if any(i.get('name') for i in inputs):
+                forms.append({'action': urljoin(current_url, action), 'method': method, 'inputs': inputs})
+    
+        for i in soup.find_all(['input', 'textarea']):
+            if not i.find_parent('form') and i.get('name'):
+                independent_inputs.append({'tag': i.name, 'type': i.get('type', i.name), 'name': i.get('name')})
+        return forms, independent_inputs
+
 
     def crawl(self):
         while self.to_visit:
@@ -38,13 +57,14 @@ class StaticCrawler:
                     logger.warning(f"Status Code is Wrong!!: {resp.status_code} - {url}")
                     continue
                 soup = BeautifulSoup(resp.text, 'html.parser')
+                forms, independent_inputs = self.extract_forms(soup, url)
+                self.extraction_results.append({'url': url, 'forms': forms, 'independent_inputs': independent_inputs})
                 for link in soup.find_all('a', href=True):
                     new_url = urljoin(self.base_url, link['href']).rstrip('/')
                     if self.is_valid_url(new_url) and new_url not in self.visited:
-                        self.urls.add(new_url)
                         self.to_visit.append(new_url)
             except Exception as e:
-                logger.error(f"[StaticCrawler] Request Falied: {url}, Error: {e}")
+                logger.error(f"[StaticCrawler] Request Failed: {url}, Error: {e}")
                 continue
-        return self.urls
+        return self.extraction_results
 

@@ -29,21 +29,26 @@ def extract_urls_dynamic(driver, base_url):
 def extract_forms_dynamic(driver, current_url):
     forms, independent_inputs = [], []
     try:
-        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
         soup = BeautifulSoup(driver.page_source, 'html.parser')
 
         for form in soup.find_all('form'):
             action = form.get('action') or current_url
             method = form.get('method', 'get').lower()
-            inputs = [{'tag': i.name, 'type': i.get('type', i.name), 'name': i.get('name')} for i in form.find_all(['input', 'textarea'])]
-            forms.append({'action': urljoin(current_url, action), 'method': method, 'inputs': inputs})
+            inputs = [
+                {'tag': i.name, 'type': i.get('type', i.name), 'name': i.get('name')}
+                for i in form.find_all(['input', 'textarea'])
+            ]
+            
+            if any(i.get('name') for i in inputs):
+                forms.append({'action': urljoin(current_url, action), 'method': method, 'inputs': inputs})
 
         for i in soup.find_all(['input', 'textarea']):
-            if not i.find_parent('form'):
+            if not i.find_parent('form') and i.get('name'):
                 independent_inputs.append({'tag': i.name, 'type': i.get('type', i.name), 'name': i.get('name')})
     except Exception as e:
         logger.error(f"[DynamicCrawler] 폼 추출 오류: {e}")
     return forms, independent_inputs
+
 
 def crawl_dynamic(driver, base_url, max_depth, visited_urls, extraction_results, robot_parser=None):
     queue = deque([(normalize_url(base_url), 0)])
@@ -81,4 +86,6 @@ def crawl_dynamic(driver, base_url, max_depth, visited_urls, extraction_results,
 
         except Exception as e:
             logger.error(f"[DynamicCrawler] 오류: {e}")
+
+    return extraction_results  # 마지막에 반환 추가
 

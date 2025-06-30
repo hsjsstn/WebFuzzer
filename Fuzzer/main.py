@@ -58,7 +58,7 @@ logger.addHandler(file_handler)
 def print_banner():
     logger.info(
         "\n=================================================\n"
-        "   🕷️ WebFuzzer CLI - Intelligent Vulnerability Scanner\n"
+        "   🕷 WebFuzzer CLI - Intelligent Vulnerability Scanner\n"
         "================================================="
     )
 
@@ -75,9 +75,9 @@ def main(base_url=None, max_depth=None, selected_categories=None):
 
         all_categories = ['sql_injection', 'xss', 'command_injection', 'path_traversal', 'ssti', 'open_redirect', 'csrf']
 
-        logger.info("🛡️  사용 가능한 페이로드 유형:")
-        categories_text = "\n".join(f"- {c}" for c in all_categories)
-        logger.info(categories_text)
+        logger.info("🛡  사용 가능한 페이로드 유형:\n" + "\n".join(f"- {c}" for c in all_categories))
+        # categories_text = "\n".join(f"- {c}" for c in all_categories)
+        # logger.info(categories_text)
 
         selected_input = input("\n🎯 사용할 페이로드 유형 (콤마로 구분): ").strip()
         selected_categories = [c.strip() for c in selected_input.split(',') if c.strip() in all_categories]
@@ -91,7 +91,7 @@ def main(base_url=None, max_depth=None, selected_categories=None):
     try:
         rp.read()
     except:
-        logger.warning("⚠️ robots.txt 로드 실패, 무시하고 진행합니다.")
+        logger.warning("⚠ robots.txt 로드 실패, 무시하고 진행합니다.")
 
     logger.info("🔎 정적 크롤링 중...")
     static_urls = StaticCrawler(base_url, rp).crawl()
@@ -102,7 +102,11 @@ def main(base_url=None, max_depth=None, selected_categories=None):
     driver = webdriver.Chrome(options=options)
 
     visited, extraction = set(), []
-    entry_url = list(static_urls)[0] if static_urls else base_url
+    # 수정된 부분: entry_url은 항상 문자열이어야 함
+    if static_urls:
+        entry_url = static_urls[0]['url']
+    else:
+        entry_url = base_url
     crawl_dynamic(driver, entry_url, max_depth, visited, extraction, rp)
 
     driver.quit()
@@ -117,16 +121,19 @@ def main(base_url=None, max_depth=None, selected_categories=None):
 
     logger.info("🚀 퍼징 시작...")
     if forms:
-        fuzzer = AsyncFuzzer(forms, selected_categories)
+        fuzzer = AsyncFuzzer(forms, selected_categories, base_url=base_url)
         asyncio.run(fuzzer.run())
     else:
-        logger.warning("⚠️ 퍼징할 폼이 없습니다.")
-        fuzzer = AsyncFuzzer(forms, selected_categories)
+        logger.warning("⚠ 퍼징할 폼이 없습니다.")
+        fuzzer = AsyncFuzzer(forms, selected_categories, base_url=base_url)
         fuzzer.vulnerabilities, fuzzer.attempts = [], []
 
     logger.info("📄 PDF 리포트 생성 중...")
+    # static_urls는 dict의 리스트, visited는 set of str
+    # static_urls에서 url만 추출해서 visited와 합침
+    crawled_url_set = set([r['url'] for r in static_urls]) | visited
     generate_pdf_report(
-        crawled_urls=static_urls.union(visited),
+        crawled_urls=crawled_url_set,
         extraction_results=extraction,
         vulnerabilities=fuzzer.vulnerabilities,
         attempts=fuzzer.attempts,
@@ -135,8 +142,9 @@ def main(base_url=None, max_depth=None, selected_categories=None):
 
     logger.info("✅ 퍼징 완료 및 리포트 저장됨: results/fuzzer_report.pdf")
 
-    return list(static_urls.union(visited)), extraction, fuzzer.vulnerabilities, fuzzer.attempts
+    return list(crawled_url_set), extraction, fuzzer.vulnerabilities, fuzzer.attempts
 
 
 if __name__ == "__main__":
     main()
+
