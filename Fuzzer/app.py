@@ -89,6 +89,10 @@ def home():
 def start():
     return render_template('start.html')
 
+@app.route('/guide')
+def guide():
+    return render_template('guide.html')
+
 @app.route("/loading", methods=["POST", "GET"])
 def loading():
     global fuzzer_done, log_start_pos
@@ -133,8 +137,10 @@ def loading():
             fuzzer_data["results"] = results
             fuzzer_data["vulnerabilities"] = vulns
             fuzzer_data["attempts"] = attempts
+            log_filename = f"results/fuzzer_logs_{result_hash}.txt"
+            pdf_filename = f"results/fuzzer_report_{result_hash}.pdf"
 
-            shutil.copyfile("fuzzer.log", "results/fuzzer_logs.txt")
+            shutil.copyfile("fuzzer.log", log_filename)
             print("[*] 로그 복사 완료")
 
             # ✅ DB에 저장
@@ -147,10 +153,10 @@ def loading():
                 user_id,
                 target_url,
                 len(vulns),
-                "results/fuzzer_report.pdf",
-                "results/fuzzer_logs.txt",
+                pdf_filename,
+                log_filename,
                 "private",
-                result_hash  # 👈 저장
+                result_hash
             ))
             result_id = cur.lastrowid
             fuzzer_result_id = result_hash 
@@ -365,13 +371,23 @@ def view_result(result_hash):
         result=result
     )
 
-@app.route("/download-pdf")
-def download_pdf():
-    return send_file("results/fuzzer_report.pdf", as_attachment=True)
+@app.route("/download-logs/<string:result_hash>")
+def download_logs(result_hash):
+    db = get_db()
+    row = db.execute("SELECT log_path FROM results WHERE result_hash = ?", (result_hash,)).fetchone()
+    db.close()
+    if not row:
+        return "파일을 찾을 수 없습니다.", 404
+    return send_file(row["log_path"], as_attachment=True)
 
-@app.route("/download-logs")
-def download_logs():
-    return send_file("results/fuzzer_logs.txt", as_attachment=True)
+@app.route("/download-pdf/<string:result_hash>")
+def download_pdf(result_hash):
+    db = get_db()
+    row = db.execute("SELECT report_path FROM results WHERE result_hash = ?", (result_hash,)).fetchone()
+    db.close()
+    if not row:
+        return "파일을 찾을 수 없습니다.", 404
+    return send_file(row["report_path"], as_attachment=True)
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)

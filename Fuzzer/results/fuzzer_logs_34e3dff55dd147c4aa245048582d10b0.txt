@@ -472,31 +472,3 @@
 2025-07-03 17:03:48,154 - INFO - [AsyncFuzzer] Vulnerability scan complete! 7 issues found.
 2025-07-03 17:03:48,156 - INFO - 📄 PDF 리포트 생성 중...
 2025-07-03 17:03:48,515 - INFO - ✅ 퍼징 완료 및 리포트 저장됨: results/fuzzer_report.pdf
-2025-07-03 17:06:12,819 - INFO - 127.0.0.1 - - [03/Jul/2025 17:06:12] "GET /result/34e3dff55dd147c4aa245048582d10b0 HTTP/1.1" 200 -
-2025-07-03 17:06:12,867 - INFO - 127.0.0.1 - - [03/Jul/2025 17:06:12] "[36mGET /static/header.css HTTP/1.1[0m" 304 -
-2025-07-03 17:06:12,868 - INFO - 127.0.0.1 - - [03/Jul/2025 17:06:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-07-03 17:06:12,869 - INFO - 127.0.0.1 - - [03/Jul/2025 17:06:12] "[36mGET /static/result.css HTTP/1.1[0m" 304 -
-2025-07-03 20:04:29,159 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:29] "GET / HTTP/1.1" 200 -
-2025-07-03 20:04:29,217 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-07-03 20:04:29,218 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:29] "[36mGET /static/header.css HTTP/1.1[0m" 304 -
-2025-07-03 20:04:29,220 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:29] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
-2025-07-03 20:04:31,023 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:31] "[32mGET /logout HTTP/1.1[0m" 302 -
-2025-07-03 20:04:31,032 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:31] "GET / HTTP/1.1" 200 -
-2025-07-03 20:04:31,069 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-07-03 20:04:31,069 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:31] "[36mGET /static/header.css HTTP/1.1[0m" 304 -
-2025-07-03 20:04:31,070 - INFO - 127.0.0.1 - - [03/Jul/2025 20:04:31] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
-2025-07-03 20:08:12,223 - INFO - 127.0.0.1 - - [03/Jul/2025 20:08:12] "[33mGET /guide HTTP/1.1[0m" 404 -
-2025-07-03 20:08:21,948 - INFO - 127.0.0.1 - - [03/Jul/2025 20:08:21] "[33mGET /guide HTTP/1.1[0m" 404 -
-2025-07-03 20:08:23,332 - INFO - 127.0.0.1 - - [03/Jul/2025 20:08:23] "GET / HTTP/1.1" 200 -
-2025-07-03 20:08:23,347 - INFO - 127.0.0.1 - - [03/Jul/2025 20:08:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
-2025-07-03 20:08:23,349 - INFO - 127.0.0.1 - - [03/Jul/2025 20:08:23] "[36mGET /static/header.css HTTP/1.1[0m" 304 -
-2025-07-03 20:08:23,350 - INFO - 127.0.0.1 - - [03/Jul/2025 20:08:23] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
-2025-07-03 20:08:24,973 - INFO - 127.0.0.1 - - [03/Jul/2025 20:08:24] "[33mGET /guide HTTP/1.1[0m" 404 -
-2025-07-03 20:09:26,081 - INFO -  * Detected change in '/Users/soojin/Desktop/Web Fuzzer/Fuzzer/app.py', reloading
-2025-07-03 20:09:26,479 - INFO -  * Restarting with stat
-2025-07-03 20:09:44,820 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5001
-2025-07-03 20:09:44,821 - INFO - [33mPress CTRL+C to quit[0m
-2025-07-03 20:09:44,821 - INFO -  * Restarting with stat
-2025-07-03 20:09:45,250 - WARNING -  * Debugger is active!
-2025-07-03 20:09:45,256 - INFO -  * Debugger PIN: 104-001-820

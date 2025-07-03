@@ -15,10 +15,10 @@
   <h2 class="text-2xl font-bold text-center my-6">퍼징 결과</h2>
 
   <div class="flex justify-center mb-4 gap-4">
-    <a href="{{ url_for('download_pdf') }}">
+    <a href="{{ url_for('download_pdf', result_hash=result.result_hash) }}">
       <button class="btn-download">PDF 리포트 다운로드</button>
     </a>
-    <a href="{{ url_for('download_logs') }}">
+    <a href="{{ url_for('download_logs', result_hash=result.result_hash) }}">
       <button class="btn-download">로그 TXT 파일 다운로드</button>
     </a>
   </div>
