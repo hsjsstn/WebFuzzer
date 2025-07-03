@@ -3,7 +3,7 @@ import sqlite3
 conn = sqlite3.connect("webfuzzer.db")
 cur = conn.cursor()
 
-cur.execute("""
+cur.executescript("""
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
@@ -20,7 +20,8 @@ CREATE TABLE results (
     vuln_count INTEGER,
     report_path TEXT,
     log_path TEXT,
-    visibility TEXT DEFAULT 'private',
+    visibility TEXT DEFAULT 'link',
+    result_hash TEXT UNIQUE,
     FOREIGN KEY(user_id) REFERENCES users(id)
 );
 """)

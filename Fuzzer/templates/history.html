@@ -94,7 +94,7 @@
           <td>{{ r.created_at }}</td>
           <td>{{ r.visibility }}</td>
           <td>
-            <a href="{{ url_for('view_result', result_id=r.id) }}" class="action-btn">보기</a>
+            <a href="{{ url_for('view_result', result_hash=r.result_hash) }}" class="action-btn">보기</a>
           </td>
         </tr>
         {% endfor %}

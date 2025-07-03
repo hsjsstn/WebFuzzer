@@ -144,10 +144,10 @@
         logArea.textContent = data.logs;
         logArea.scrollTop = logArea.scrollHeight;
 
-        if (data.done && data.result_id) {
+        if (data.done && data.result_hash) {
           btn.disabled = false;
           btn.classList.add("active");
-          form.action = `/result/${data.result_id}`;  // ✅ 여기서 form action 지정
+          form.action = `/result/${data.result_hash}`;  // ✅ 여기서 form action 지정
         } else {
           btn.disabled = true;
           btn.classList.remove("active");

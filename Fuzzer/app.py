@@ -9,6 +9,7 @@ import sqlite3
 from flask_bcrypt import Bcrypt
 import re
 from functools import wraps
+import uuid
 
 # 🔥 /logs 경로 제외용 필터 클래스
 class ExcludeLogsFilter(logging.Filter):
@@ -32,6 +33,11 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     handlers=[file_handler, stream_handler]
 )
+
+# 해시 생성 (result 페이지 라우팅)
+def generate_result_hash():
+    return uuid.uuid4().hex
+
 
 logger = logging.getLogger(__name__)
 
@@ -118,6 +124,7 @@ def loading():
 
     def run_async(user_id):
         global fuzzer_done, fuzzer_data, fuzzer_result_id
+        result_hash = generate_result_hash()
 
         try:
             urls, results, vulns, attempts = main(target_url, max_depth, selected_payloads)
@@ -134,17 +141,19 @@ def loading():
             db = get_db()
             cur = db.cursor()
             cur.execute("""
-                INSERT INTO results (user_id, target_url, vuln_count, report_path, log_path, visibility)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO results (user_id, target_url, vuln_count, report_path, log_path, visibility, result_hash)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
             """, (
                 user_id,
                 target_url,
                 len(vulns),
                 "results/fuzzer_report.pdf",
                 "results/fuzzer_logs.txt",
-                "private"
+                "private",
+                result_hash  # 👈 저장
             ))
             result_id = cur.lastrowid
+            fuzzer_result_id = result_hash 
 
             for v in vulns:
                 cur.execute("""
@@ -188,6 +197,15 @@ def get_logs():
     global log_start_pos
     global fuzzer_result_id
 
+    db = get_db()
+    cur = db.cursor()
+    result_hash = None
+    if fuzzer_result_id:
+        cur.execute("SELECT result_hash FROM results WHERE id = ?", (fuzzer_result_id,))
+        row = cur.fetchone()
+        if row:
+            result_hash = row["result_hash"]
+
     try:
         with open("fuzzer.log", "rb") as f:
             f.seek(log_start_pos)
@@ -198,7 +216,8 @@ def get_logs():
     return jsonify({
         "logs": new_logs,
         "done": fuzzer_done,
-        "result_id": fuzzer_result_id
+        "result_id": fuzzer_result_id,
+        "result_hash": result_hash
     })
 
 @app.route("/login", methods=["GET", "POST"])
@@ -272,18 +291,52 @@ def history():
     user_id = session.get("user_id")
 
     results = db.execute(
-        "SELECT * FROM results WHERE user_id = ? ORDER BY created_at DESC",
+        "SELECT id, result_hash, target_url, created_at, vuln_count, visibility FROM results WHERE user_id = ? ORDER BY created_at DESC",
         (user_id,)
     ).fetchall()
 
     return render_template("history.html", results=results)
 
-@app.route("/result/<int:result_id>")
-def view_result(result_id):
+# @app.route("/result/<int:result_id>")
+# def view_result(result_id):
+#     db = get_db()
+#     cur = db.cursor()
+
+#     cur.execute("SELECT * FROM results WHERE id = ?", (result_id,))
+#     result = cur.fetchone()
+#     if not result:
+#         return "결과를 찾을 수 없습니다.", 404
+
+#     visibility = result["visibility"]
+#     user_id = session.get("user_id")
+
+#     if visibility == "private" and result["user_id"] != user_id:
+#         return "접근 권한이 없습니다.", 403
+
+#     cur.execute("SELECT form, type, payload FROM vulnerabilities WHERE result_id = ?", (result_id,))
+#     vulnerabilities = [dict(row) for row in cur.fetchall()]
+
+#     cur.execute("SELECT form, payload, response, is_successful FROM attempts WHERE result_id = ?", (result_id,))
+#     attempts = [dict(row) for row in cur.fetchall()]
+
+#     vulnCounts = {}
+#     for v in vulnerabilities:
+#         t = v.get("type", "unknown")
+#         vulnCounts[t] = vulnCounts.get(t, 0) + 1
+
+#     return render_template("result.html",
+#         vulnerabilities=vulnerabilities,
+#         attempts=attempts,
+#         vulnCounts=vulnCounts,
+#         result=result
+#     )
+
+@app.route("/result/<string:result_hash>")
+def view_result(result_hash):
     db = get_db()
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM results WHERE id = ?", (result_id,))
+    cur.execute("SELECT * FROM results WHERE result_hash = ?", (result_hash,))
     result = cur.fetchone()
     if not result:
         return "결과를 찾을 수 없습니다.", 404
@@ -294,10 +347,10 @@ def view_result(result_id):
     if visibility == "private" and result["user_id"] != user_id:
         return "접근 권한이 없습니다.", 403
 
-    cur.execute("SELECT form, type, payload FROM vulnerabilities WHERE result_id = ?", (result_id,))
+    cur.execute("SELECT form, type, payload FROM vulnerabilities WHERE result_id = ?", (result["id"],))
     vulnerabilities = [dict(row) for row in cur.fetchall()]
 
-    cur.execute("SELECT form, payload, response, is_successful FROM attempts WHERE result_id = ?", (result_id,))
+    cur.execute("SELECT form, payload, response, is_successful FROM attempts WHERE result_id = ?", (result["id"],))
     attempts = [dict(row) for row in cur.fetchall()]
 
     vulnCounts = {}
@@ -311,23 +364,6 @@ def view_result(result_id):
         vulnCounts=vulnCounts,
         result=result
     )
-
-@app.route("/results")
-def view_results():
-    if "user_id" not in session:
-        return redirect(url_for("login"))
-
-    db = get_db()
-    cur = db.cursor()
-    cur.execute("""
-        SELECT id, target_url, created_at, vuln_count, visibility
-        FROM results
-        WHERE user_id = ?
-        ORDER BY created_at DESC
-    """, (session["user"],))
-    rows = cur.fetchall()
-
-    return render_template("results_list.html", results=rows)
 
 @app.route("/download-pdf")
 def download_pdf():
