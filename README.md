@@ -17,7 +17,7 @@
 
 ## 🛠 기술 스택
 - Backend: Python 3.13, Flask
-- Frontend: HTML, CSS (Tailwind + Custom CSS), Jinja2
+- Frontend: HTML, CSS (Tailwind + CSS3), Jinja2
 - Crawler/Fuzzer: Requests, BeautifulSoup
 - 기타: SQLite (결과 저장), Docker (테스트 환경 구성)
 
